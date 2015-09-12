@@ -181,7 +181,7 @@ select{border:1px solid #ddd;padding:3px}
 body{
 	font-family: 'source_sans_proregular';
 	color:#333;
-	background: #f1f1f1
+	background: white;
 }
 .main-container{
 	padding-top: 20px;
@@ -190,7 +190,7 @@ body{
 }
 header{
 	padding-top: 10px;
-	background: #f1f1f1;
+	background: white;
 }
 header .well{
 	-webkit-box-shadow: none;
@@ -330,7 +330,7 @@ footer .copyright{
 	background: #263238
 }
 .navbar{
-	background: #384248;
+	background: #050505;
 	margin-bottom: 0;
 	border-color: #384248
 }
@@ -342,7 +342,7 @@ footer .copyright{
 }
 .navbar li a{
 	font-family: 'open_sanscondensed_light';
-	font-size: 20px;
+	font-size: 16px;
 	text-transform: uppercase;
 	color: #fff!important;
 	-ms-transition: all 100ms ease-in-out 0s ;
