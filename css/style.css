@@ -516,3 +516,8 @@ footer .copyright{
 .panel-cat .list-group-sub:last-child a:last-child {
 	border-bottom: 1px solid #ddd
 }
+
+.thumbnail .caption
+{
+	padding-left: 30 !important;
+}
