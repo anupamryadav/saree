@@ -55,8 +55,25 @@
 <script>
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
-  $http.get("http://affiliate-feeds.snapdeal.com/feed/api/category/v1:691:646650596364?expiresAt=1442457000004&signature=xotumqpewqinodfuvzpi")
-  .success(function (response) {$scope.product = response.records;});
+
+
+$http({
+        url: 'http://affiliate-feeds.snapdeal.com/feed/api/category/v1:691:646650596364?expiresAt=1442457000004&signature=xotumqpewqinodfuvzpi,
+        method: 'get',
+        headers: { 'Content-Type': 'Accept:application/json' },
+        transformRequest: angular.identity,
+        data: {
+                'Snapdeal-Affiliate-Id':'70203',
+                'Snapdeal-Token-Id':'c8828539bc89f85eedd5d009d1fedf'
+               }
+    }).success(function(response){
+      $scope.product = response.records;}
+
+    }).error(function(){
+
+    });
+
+
 });
 </script>
 
