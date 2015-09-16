@@ -284,6 +284,36 @@
          "mrp":1500,
          "offerPrice":637,
          "availability":"in stock"
+      },
+       {  
+         "id":648963148722,
+         "title":"Meera Creations Peachpuff Cotton Kurti",
+         "description":"Colour : PeachPuff fabric : Cotton Disclaimer : Premium quality product from the house of Meera Creations. Product color may slightly vary due to photographic lighting sources or your monitor settings. SKU Code : Peach.L ",
+         "brand":"Meera Creations",
+         "link":"http://www.snapdeal.com/product/meera-creations-peachpuff-cotton-kurti/648963148722?utm_source=aff_prog&utm_campaign=afts&offer_id=17&aff_id=70203",
+         "imageLink":"http://n1.sdlcdn.com/imgs/a/4/c/Meera-Creations-PeachPuff-Cotton-Kurti-SDL631913646-1-57e53.jpg",
+         "subCategoryId":178,
+         "subCategoryName":"Kurtis",
+         "categoryId":691,
+         "categoryName":"Women's Ethnic Wear",
+         "mrp":999,
+         "offerPrice":439,
+         "availability":"in stock"
+      },
+      {  
+         "id":626027012954,
+         "title":"Shree Ambey Designer Sarees Beige Sanganeri Art Silk Printed Saree With Blouse Piece",
+         "description":"Colour : Beige fabric : Art Silk Work : Printed Brand : Shree Ambey Designer Sarees SKU Code : SAS191012546 Set Contents : With Blouse Piece ",
+         "brand":"Shree Ambey Designer Sarees",
+         "link":"http://www.snapdeal.com/product/shree-ambey-designer-sarees-beige/626027012954?utm_source=aff_prog&utm_campaign=afts&offer_id=17&aff_id=70203",
+         "imageLink":"http://n1.sdlcdn.com/imgs/a/x/n/Shree-Ambey-Designer-Sarees-Beige-SDL527890807-1-46f7d.jpg",
+         "subCategoryId":176,
+         "subCategoryName":"Sarees",
+         "categoryId":691,
+         "categoryName":"Women's Ethnic Wear",
+         "mrp":799,
+         "offerPrice":375,
+         "availability":"in stock"
       }
 
     ]
