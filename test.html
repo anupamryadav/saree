@@ -55,7 +55,7 @@
 <script>
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
-  $http.get("data/saree.json")
+  $http.get("http://affiliate-feeds.snapdeal.com/feed/api/category/v1:691:646650596364?expiresAt=1442457000004&signature=xotumqpewqinodfuvzpi")
   .success(function (response) {$scope.product = response.records;});
 });
 </script>
