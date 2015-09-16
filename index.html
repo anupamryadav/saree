@@ -377,7 +377,7 @@
         <script>
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
-  $http.get("data/datafile.json")
+  $http.get("data/index.json")
   .success(function (response) {$scope.product = response.records;});  
 });
 </script>
