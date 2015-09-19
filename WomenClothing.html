@@ -257,8 +257,8 @@
 	     <script>
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
-  $http.get("data/dress.json")
-  .success(function (response) {$scope.product = response.products;});  
+  $http.get("data/index.json")
+  .success(function (response) {$scope.product = response.records;});  
 });
 </script>
 	    <script>
