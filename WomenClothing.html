@@ -118,12 +118,26 @@
                
 
               
-    
+    <form class="form-inline">
+  
+
+              
+       <div class="col-lg-9 col-md-9 col-sm-12">
+
+  <input ng-model="query" type="text"
+        placeholder="Filter by" autofocus class="form-control input-lg"/>
+</div>
+
+    </form>
+               <div class="col-lg-9 col-md-9 col-sm-12">
+                <br/>
+                <br/>
+               </div>
 
 
 
 
- <span ng-repeat="x in datalists | pagination: curPage * pageSize | limitTo: pageSize">
+ <span ng-repeat="x in datalists | pagination: curPage * pageSize | limitTo: pageSize | filter:query | orderBy: 'id'">
   <div class="col-lg-4 col-sm-4 hero-feature text-center">
      <div class="thumbnail">
                                     <a href="{{x.link}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
