@@ -55,7 +55,7 @@
                       <span class="icon-bar"></span>
                   </button>
                   <!-- text logo on mobile view -->
-                  <a class="navbar-brand visible-xs" href="index.html">ArnavOnline Shop</a>
+                  <a class="navbar-brand visible-xs" href="index.html">Shopping Funnel</a>
               </div>
               <div class="collapse navbar-collapse navbar-ex1-collapse">
                   <ul class="nav navbar-nav">
@@ -160,7 +160,7 @@
 
 
 
- <span ng-repeat="x in datalists | pagination: curPage * pageSize | limitTo: pageSize | filter: Phones | orderBy: 'title'">
+ <span ng-repeat="x in datalists | pagination: curPage * pageSize | limitTo: pageSize | filter: query | orderBy: 'title'">
   <div class="col-lg-4 col-sm-4 hero-feature text-center">
      <div class="thumbnail">
                                     <a href="{{x.link}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
@@ -294,7 +294,7 @@ myapp.controller('samplecontoller', function ($scope,$http) {
  $scope.showData = function( ){
 
  $scope.curPage = 0;
- $scope.pageSize = 27;
+ $scope.pageSize = 36;
   
 
 
