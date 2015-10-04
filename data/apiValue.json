@@ -1,409 +1,402 @@
 {
-  "apiGroups": {
-    "Affiliate": {
-      "listingsAvailable": {
-        "Beauty_Personal_Care": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:586:1461823?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
+    "apiGroups": {
+        "Affiliate": {
+            "listingsAvailable": {
+                "Beauty_Personal_Care": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:586:821655440?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Eyewear": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:473:662748456716?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Real_Estate": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:897:673143570606?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Jewellery": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:6:683889530703?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Furniture": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:580:1787415934?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Tweens_Boys": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:814:463630920?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Home_Improvement": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:864:659443129124?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "The_Designer_Studio": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:924:678923935263?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Fashion_Jewellery": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:1113:646723990496?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Office_Equipment": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:753:46356399?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Kids_Decor": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:720:433564820?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "TVs_Audio_Video": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:7:423901?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Hobbies": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:682:669112485299?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Mens_Clothing": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:17:644790903893?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Automotive": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:310:8694670?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Womens_Ethnic_Wear": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:691:649561043356?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Infant_Wear": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:557:1787480220?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Boys_Clothing_(2-8_Yrs)": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:524:648702325373?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Bags_Luggage": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:474:674391530488?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Mobiles_Tablets": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:12:634407752835?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Gourmet": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:899:126951237?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Cameras_Accessories": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:290:677028198979?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Books": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:364:636479075540?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Computers_Peripherals": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:21:28914?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Girls_Clothing_(2-8_Yrs)": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:539:658331124802?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Mens_Footwear": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:226:1318845237?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Appliances": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:9:686142575613?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Stationery": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:461:426087?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Click_and_Collect": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:1033:1301242577?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Online_Education": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:746:664461787201?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Chocolates_Snacks": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:403:676381904317?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Home_Furnishing": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:475:663543060071?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "TV_Shop": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:920:654403384206?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Girls_Clothing_(8-14_Yrs)": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:830:1166577799?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Home_Services": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:1119:1659617986?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Gaming": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:575:654191500207?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Musical_Instruments": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:502:649161972565?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Hardware_Sanitary_Fittings": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:694:649257431012?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Kitchenware": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:5:1939692294?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Precious_Jewellery": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:658:1620534938?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Home_Decoratives": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:217:1490112477?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Sports_Fitness": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:159:953887819?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Womens_Footwear": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:227:637256532247?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Gifting_Events": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:643:1558418729?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Health_Wellness_Medicine": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:318:417945?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Digital_Entertainment": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:1166:638005192239?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Toys_Games": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:66:220832?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Kids_Footwear": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:493:623587880712?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Baby_Care": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:715:1961425754?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Fashion_Accessories": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:481:620032343615?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Watches": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:476:645729894490?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "World_Food_/_Indian_Food": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:1127:666183715778?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Womens_Clothing": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:23:632988929606?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Movies_Music": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:516:1607018637?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Fragrances": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:31:651635235747?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                },
+                "Snapdeal_Select": {
+                    "listingVersions": {
+                        "v1": {
+                            "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:1243:621988126494?expiresAt=1443997800040&signature=spsffhuqltehkprgdkzk"
+                        }
+                    }
+                }
             }
-          }
-        },
-        "Eyewear": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:473:662748456716?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Real_Estate": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:897:677617694609?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Jewellery": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:6:683889530703?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Furniture": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:580:1787415934?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Tweens_Boys": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:814:463630920?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Automobiles": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:1145:1925747284?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Home_Improvement": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:864:659443129124?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "The_Designer_Studio": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:924:625205908330?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Fashion_Jewellery": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:1113:646723990496?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Office_Equipment": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:753:46356399?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Kids_Decor": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:720:433564820?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "TVs_Audio_Video": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:7:423901?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Mens_Clothing": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:17:644790903893?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Hobbies": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:682:669112485299?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Automotive": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:310:8694670?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Womens_Ethnic_Wear": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:691:649561043356?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Infant_Wear": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:557:1787480220?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Boys_Clothing_(2-8_Yrs)": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:524:648702325373?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Bags_Luggage": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:474:674391530488?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Mobiles_Tablets": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:12:634407752835?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Gourmet": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:899:1183524069?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Cameras_Accessories": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:290:665221726596?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Books": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:364:636479075540?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Computers_Peripherals": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:21:28914?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Girls_Clothing_(2-8_Yrs)": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:539:658331124802?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Mens_Footwear": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:226:1318845237?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Appliances": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:9:686142575613?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Stationery": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:461:426087?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Click_and_Collect": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:1033:1301242577?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Online_Education": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:746:673389215306?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Chocolates_Snacks": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:403:676381904317?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Home_Furnishing": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:475:663543060071?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "TV_Shop": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:920:637956076122?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Girls_Clothing_(8-14_Yrs)": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:830:1166577799?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Home_Services": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:1119:1659617986?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Gaming": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:575:654191500207?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Musical_Instruments": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:502:649161972565?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Hardware_Sanitary_Fittings": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:694:649257431012?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Kitchenware": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:5:1939692294?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Precious_Jewellery": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:658:1620534938?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Home_Decoratives": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:217:1490112477?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Womens_Footwear": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:227:637256532247?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Sports_Fitness": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:159:953887819?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Gifting_Events": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:643:1558418729?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Health_Wellness_Medicine": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:318:417945?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Digital_Entertainment": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:1166:638005192239?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Toys_Games": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:66:220832?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Kids_Footwear": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:493:623587880712?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Baby_Care": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:715:1961425754?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Fashion_Accessories": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:481:620032343615?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Watches": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:476:624947172582?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "World_Food_/_Indian_Food": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:1127:666183715778?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Womens_Clothing": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:23:630212870898?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Movies_Music": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:516:1607018637?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Snapdeal_Select": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:1243:681920637843?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
-        },
-        "Fragrances": {
-          "listingVersions": {
-            "v1": {
-              "get": "http://affiliate-feeds.snapdeal.com/feed/api/category/v1:31:651635235747?expiresAt=1443753000052&signature=tgqmsiwgpqjldgdhqraz"
-            }
-          }
         }
-      }
-    }
-  },
-  "title": "Snapdeal product feeds API directory",
-  "description": "This directory contains information about all listings and their available versions. Use the link provided to get product feeds for any listing in JSON and XML formats."
+    },
+    "title": "Snapdeal product feeds API directory",
+    "description": "This directory contains information about all listings and their available versions. Use the link provided to get product feeds for any listing in JSON and XML formats."
 }
