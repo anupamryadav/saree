@@ -219,7 +219,7 @@
                         <span class="title">FEATURED PRODUCTS</span>
                     </div>
                  
-                    <span ng-repeat="x in product">
+                    <span ng-repeat="x in product |limitTo:45">
   <div class="col-lg-4 col-sm-4 hero-feature text-center">
      <div class="thumbnail">
                                     <a href="{{x.link}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
