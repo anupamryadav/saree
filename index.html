@@ -219,7 +219,7 @@
                         <span class="title">FEATURED PRODUCTS</span>
                     </div>
                  
-                    <span ng-repeat="x in product |limitTo:45">
+                    <span ng-repeat="x in product">
   <div class="col-lg-4 col-sm-4 hero-feature text-center">
      <div class="thumbnail">
                                     <a href="{{x.link}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
@@ -322,7 +322,7 @@
         <script>
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
-  $http.get("data/watches.json")
+  $http.get("data/index.json")
   .success(function (response) {$scope.product = response.records;});  
 });
 </script>
