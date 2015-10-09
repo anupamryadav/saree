@@ -11,7 +11,7 @@
 	    <link href="css/smoothproducts.css" rel="stylesheet">
 	    <link href="css/style.css" rel="stylesheet">
 	</head>
-	<body>
+	<body ng-app="sampleapp" ng-controller="samplecontoller" ng-init="showData()"> 
 		<header>
 		    <div class="container">
 		        <div class="row">
@@ -42,29 +42,7 @@
 	    </header>
 
 		<!-- Navigation -->
-	    <nav class="navbar navbar-inverse" role="navigation">
-	        <div class="container">
-	            <div class="navbar-header">
-	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-	                    <span class="sr-only">Toggle navigation</span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                </button>
-	                <!-- text logo on mobile view -->
-	                <a class="navbar-brand visible-xs" href="index.html">Aranv Online Shop</a>
-	            </div>
-	            <div class="collapse navbar-collapse navbar-ex1-collapse">
-	                <ul class="nav navbar-nav">
-	                    <li><a href="index.html">Home</a></li>
-	                    <li><a href="catalogue.html">Catalogue</a></li>
-	                    <li><a href="cart.html">Shopping Cart</a></li>
-	                    <li><a href="checkout.html">Checkout</a></li>
-	                   
-	                </ul>
-	            </div>
-	        </div>
-	    </nav>
+	   <div ng-include="'nav.html'"></div>
 	    <!-- End Navigation -->
 
 	    <div class="container main-container">
