@@ -1,10 +1,11 @@
+
   <!DOCTYPE html>
   <html lang="en">
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="">
-      <meta name="author" content="">  
+      <meta name="author" content="">
        <title> Online Shopping Site in India for Men, Women & Kids</title>
        <meta name="keywords" content="Shopping funnel, India,http://www.Shoppingfunnel.com ,Shoppingfunnel.com,online Shopping, online saree  store, online saree mall, Buy saree , Buy discount saree , discount saree,women-fashion,sarees ,designer sarees, womens sarees ,women party wear designer sarees ,cotton sarees ,designer bollywood party wear sarees,online shopping funnel"/>  
       <link href="css/bootstrap.css" rel="stylesheet">
@@ -44,7 +45,7 @@
       </header>
 
     <!-- Navigation -->
-    <div ng-include="'nav.html'"></div>
+     <div ng-include="'nav.html'"></div>
       <!-- End Navigation -->
 
       <div class="container main-container">
@@ -57,48 +58,47 @@
 
           <!-- Best Seller -->
 
-          <div class="col-lg-12 col-md-12 col-sm-6">
+                   <div class="col-lg-12 col-md-12 col-sm-6">
             <div class="no-padding">
                     <span class="title">Category</span>
-                  </div>                    
-    <span ng-repeat="category in cate"> 
-  <a href="men_Footware.html" class="list-group-item">Footware</a>
-    </span>       
+                  </div>
+                    
+
+    <span ng-repeat="category in cate">
+ 
+ <a href="men.html" class="list-group-item">Dresss</a>
+ 
+    </span>
+   
+                   
           </div>
 
           <div class="col-lg-12 col-md-12 col-sm-6">
-                        <div class="no-padding">
-                            <span class="title">BEST SELLER</span>
-                        </div>
-                      
-                        
-                         <div class="hero-feature hidden-sm">
+            <div class="no-padding">
+                    <span class="title">BEST SELLER</span>
+                  </div>
+                    <div class="hero-feature hidden-sm">
                             <div class="thumbnail text-center">
-                                     <div data-WRID="WRID-144345521775444699" data-widgetType="featuredDeals" data-responsive="yes" data-class="affiliateAdsByFlipkart" height="250" width="300"></div><script async src="//affiliate-static.flixcart.com/affiliate/widgets/FKAffiliateWidgets.js"></script>
+                                   <div class="caption prod-caption">
+                               <div data-SDID="1047677241"  data-identifier="SnapdealAffiliateAds" data-height="600" data-width="190" ></div><script async id="snap_zxcvbnhg" src="http://affiliate-ads.snapdeal.com/affiliate/js/snapdealAffiliate.js"></script>
+                                </div>
                             </div>
                         </div>
                        <div class="hero-feature hidden-sm">
                             <div class="thumbnail text-center">
-                                 <div data-WRID="WRID-144345521524391409" data-widgetType="featuredDeals" data-responsive="yes" data-class="affiliateAdsByFlipkart" height="250" width="300"></div><script async src="//affiliate-static.flixcart.com/affiliate/widgets/FKAffiliateWidgets.js"></script>
-  
+                                   <div class="caption prod-caption">
+                              <div data-SDID="414046349"  data-identifier="SnapdealAffiliateAds" data-height="600" data-width="160" ></div><script async id="snap_zxcvbnhg" src="http://affiliate-ads.snapdeal.com/affiliate/js/snapdealAffiliate.js"></script>
+                                </div>
                             </div>
                         </div>
                         <div class="hero-feature hidden-sm">
                             <div class="thumbnail text-center">
-                              <div data-WRID="WRID-144354119780562758" data-widgetType="staticBanner"  data-class="affiliateAdsByFlipkart" height="250" width="250"></div><script async src="//affiliate-static.flixcart.com/affiliate/widgets/FKAffiliateWidgets.js"></script>
-
+                                   <div class="caption prod-caption">
+                              <div data-SDID="1047683523"  data-identifier="SnapdealAffiliateAds" data-height="600" data-width="160" ></div><script async id="snap_zxcvbnhg" src="http://affiliate-ads.snapdeal.com/affiliate/js/snapdealAffiliate.js"></script>
+                                </div>
                             </div>
                         </div>
-
-
-                    </div>
-                  
-
-                    
-
-
-
-
+          </div>
           <!-- End Best Seller -->
 
             </div>
@@ -113,8 +113,7 @@
                
 
               
-    
-              <form class="form-inline">
+    <form class="form-inline">
   
 
               
@@ -125,8 +124,9 @@
 </div>
 
     </form>
-               <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="text-center" ng-show="datalists.length">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                 
+          <div class="text-center" ng-show="datalists.length">
           
 
           <ul class="pagination-controle pagination">
@@ -148,11 +148,10 @@
 </ul>
 
           </div>
-
-</div>
                 <br/>
                 <br/>
                </div>
+
 
 
 
@@ -168,7 +167,7 @@
                                 <p></p>
                                 <p>
                                     </p><div class="btn-group">
-                                          <a href="#" class="btn btn-default">Rs {{x.offerPrice}}</a>
+                                        <a href="#" class="btn btn-default">Rs {{x.offerPrice}}</a>
                                         <a href="{{x.link}}" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
                                     </div>
                                 <p></p>
@@ -178,8 +177,6 @@
                         
 
   </span>
-
-
 
 
 
@@ -207,6 +204,9 @@
 
           </div>
 
+
+
+          
 </div>
         
 
@@ -224,7 +224,7 @@
           </div>
     </div>
 
-      <div ng-include="'footer.html'"></div>
+   <div ng-include="'footer.html'"></div>
 
       <a href="#top" class="back-top text-center" onclick="$('body,html').animate({scrollTop:0},500); return false">
         <i class="fa fa-angle-double-up"></i>
@@ -233,7 +233,7 @@
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.js"></script>
       <script src="js/jquery.blImageCenter.js"></script>
-      <script src="js/Arnav.js"></script>
+      <script src="js/arnav.js"></script>
        <script>
 
 
