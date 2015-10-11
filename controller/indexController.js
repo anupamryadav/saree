@@ -1,6 +1,7 @@
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
   
+  $scope.showData = function( ){
 
   $http.get("data/index.json")
   .success(function (response) {
@@ -12,5 +13,7 @@ app.controller('customersCtrl', function($scope, $http) {
   .success(function (response) {
     $scope.product1 = response.products;
   });  
+
+  }
 
 });
