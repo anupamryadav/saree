@@ -57,6 +57,11 @@ $http.get("data/Boy.json")
     $scope.Beauty = response.products;
   });  
 
+$http.get("data/men.json")
+  .success(function (response) {
+    $scope.men = response.products;
+  });  
+
   }
 
 });
