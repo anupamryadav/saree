@@ -245,6 +245,30 @@
                         
 
   </span>
+
+  <span ng-repeat="x in men | limitTo: 3">
+  <div class="col-lg-4 col-sm-4 hero-feature text-center">
+     <div class="thumbnail">
+                                    <a href="{{x.link}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
+                                <img src="{{x.imageLink}}" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
+                            </a>                            
+                            <div class="caption prod-caption">
+                                <h4>
+                                <a class="link-p" style="overflow: hidden; position: relative;" href='{{x.link}}' target=_blank>{{x.title}}</a></h4>
+                                <p></p>
+                                <p>
+                                    </p><div class="btn-group">
+                                        <a href="#" class="btn btn-default">Rs {{x.offerPrice}}</a>
+                                        <a href="{{x.link}}" target="_blank" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+                                    </div>
+                                <p></p>
+                            </div>
+                        </div>
+   </div>
+                        
+
+  </span>
+  
                <span ng-repeat="x in KidFootwear | limitTo: 3">
   <div class="col-lg-4 col-sm-4 hero-feature text-center">
      <div class="thumbnail">
@@ -405,28 +429,6 @@
 
   </span>
 
-  <span ng-repeat="x in men | limitTo: 3">
-  <div class="col-lg-4 col-sm-4 hero-feature text-center">
-     <div class="thumbnail">
-                                    <a href="{{x.link}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
-                                <img src="{{x.imageLink}}" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
-                            </a>                            
-                            <div class="caption prod-caption">
-                                <h4>
-                                <a class="link-p" style="overflow: hidden; position: relative;" href='{{x.link}}' target=_blank>{{x.title}}</a></h4>
-                                <p></p>
-                                <p>
-                                    </p><div class="btn-group">
-                                        <a href="#" class="btn btn-default">Rs {{x.offerPrice}}</a>
-                                        <a href="{{x.link}}" target="_blank" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
-                                    </div>
-                                <p></p>
-                            </div>
-                        </div>
-   </div>
-                        
-
-  </span>
                     
                 </div>
                 <!-- End Featured -->
