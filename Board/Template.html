@@ -1,34 +1,28 @@
-<span ng-repeat="x in users">
-     
-  
-     
-     
-             
-         <div class="col-lg-4 col-sm-4 hero-feature text-center">
-     
-  
-  
-     <div class="thumbnail">
-                                    <a href="{{x.productUrl}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
-                                        
+    <div infinite-scroll="getMoreData()" >
+    <span ng-repeat="x in users">
+             <div class="col-lg-4 col-sm-4 hero-feature text-center">
+         <div class="thumbnail">
+                                        <a href="{{x.productUrl}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
                                             
-                                <img src="{{x.imageUrls['400x400']}}" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
-                                        
-                            </a>                            
-                            <div class="caption prod-caption">
-                                <h4>
-                                <a class="link-p" style="overflow: hidden; position: relative;" href='{{x.link}}' target=_blank>{{x.title}}</a></h4>
-                                <p></p>
-                                <p>
-                                    </p><div class="btn-group">
-                                           <a href="#" class="btn btn-default">Rs {{x.sellingPrice['amount']}}</a></span>
-                                        <a href="{{x.productUrl}}" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
-                                    </div>
-                                <p></p>
+                                                
+                                    <img src="{{x.imageUrls['400x400']}}" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
+                                            
+                                </a>                            
+                                <div class="caption prod-caption">
+                                    <h4>
+                                    <a class="link-p" style="overflow: hidden; position: relative;" href='{{x.link}}' target=_blank>{{x.title}}</a></h4>
+                                    <p></p>
+                                    <p>
+                                        </p><div class="btn-group">
+                                               <a href="#" class="btn btn-default">Rs {{x.sellingPrice['amount']}}</a></span>
+                                            <a href="{{x.productUrl}}" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+                                        </div>
+                                    <p></p>
+                                </div>
                             </div>
-                        </div>
-         </div>
-            </span>
-     </span>
+             </div>
                 </span>
-    </span>
+         </span>
+                    </span>
+        </span>
+    </div>
