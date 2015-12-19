@@ -529,3 +529,9 @@ background-color :#101010 !important;
 
 	margin-left :10px !important;
 }
+
+.Header_title {
+    background-color: #384248 ;
+    color: white;
+    padding-left:20px;
+}
