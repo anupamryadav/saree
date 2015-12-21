@@ -535,3 +535,6 @@ background-color :#101010 !important;
     color: white;
     padding-left:20px;
 }
+.strikethrough {
+  text-decoration: line-through;
+}
