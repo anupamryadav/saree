@@ -76,11 +76,9 @@
                   </div>
                
                        <div class="hero-feature hidden-sm">
-                            <div class="thumbnail text-center">
-                                   <div class="caption prod-caption">
-                              <div data-SDID="414046349"  data-identifier="SnapdealAffiliateAds" data-height="600" data-width="160" ></div><script async id="snap_zxcvbnhg" src="http://affiliate-ads.snapdeal.com/affiliate/js/snapdealAffiliate.js"></script>
-                                </div>
-                            </div>
+                               <div ng-repeat="cat in getCategories()">
+        <input type="checkbox" ng-model="filter[cat]" /> {{cat| uppercase}}
+    </div>
                         </div>
                         <div class="hero-feature hidden-sm">
                             <div class="thumbnail text-center">
@@ -120,8 +118,10 @@
     </form>
         <div class="col-lg-12 col-md-12 col-sm-12">
 
+
           <br/>
                 <br/>
+                 Number of results: {{filtered.length}}
         </div>
 
                 
@@ -129,7 +129,7 @@
 
 
             <div infinite-scroll="getMoreData()" >
-<span ng-repeat="x in data  | limitTo:totalDisplayed |filter :query | orderBy:brand" >
+<span ng-repeat="x in filtered=(data | filter:filterByCategory)   | limitTo:totalDisplayed " >
   <div class="col-lg-4 col-sm-4 hero-feature text-center">
      <div class="thumbnail">
                                     <a href="{{x.link}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
