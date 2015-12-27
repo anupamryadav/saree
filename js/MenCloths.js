@@ -6,7 +6,7 @@ $scope.totalDisplayed = 6
                $scope.filter = {};
 $scope.showData = function( ){
 
-        $http.get("DATA_Flip/men.json")
+        $http.get("DATA_FLIP/men.json")
   .success(function (response) {
 
    //scope.data = response.productInfoList;
