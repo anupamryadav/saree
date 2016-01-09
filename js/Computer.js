@@ -6,7 +6,7 @@ $scope.totalDisplayed = 6
 							 $scope.filter = {};
 $scope.showData = function( ){
 
-$scope.titles ="Online Shopping Site in India for Men, Women & Kids";
+$scope.titles ="Online Shopping Site in India for Computer";
 $scope.Keyword ="Shoppingfunnel, India,http://www.Shoppingfunnel.com ,Shoppingfunnel.com,online Shopping, online saree  store, online saree mall, Buy saree , Buy discount saree , discount saree,women-fashion,sarees ,designer sarees, womens sarees ,women party wear designer sarees ,cotton sarees ,designer bollywood party wear sarees,online shopping funnel";
 
 							$http.get("data/computer.json")
