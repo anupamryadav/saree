@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+  <script src="angular.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>
+ 
+  <link href="common1.css" rel="stylesheet">
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<p>Today's welcome message is:</p>
+<h1>{{myWelcome}}</h1>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+
+var createCORSRequest = function(method, url) {
+  var xhr = new XMLHttpRequest();
+  if ("withCredentials" in xhr) {
+    // Most browsers.
+    xhr.open(method, url, true);
+  } else if (typeof XDomainRequest != "undefined") {
+    // IE8 & IE9
+    xhr = new XDomainRequest();
+    xhr.open(method, url);
+  } else {
+    // CORS not supported.
+    xhr = null;
+  }
+  return xhr;
+};
+
+var url = 'http://affiliate-feeds.snapdeal.com/feed/api/category/v1:586:629056481240?expiresAt=1457289000002&signature=utshrlmmxyzrjvqezdlg';
+var method = 'GET';
+var xhr = createCORSRequest(method, url);
+
+xhr.onload = function() {
+  // Success code goes here.
+};
+
+xhr.onerror = function() {
+  // Error code goes here.
+};
+
+xhr.setRequestHeader('Origin', '*');
+xhr.setRequestHeader('Snapdeal-Affiliate-Id', '70203');
+
+xhr.setRequestHeader('Snapdeal-Token-Id', 'c8828539bc89f85eedd5d009d1fedf');
+xhr.send()
+
+});
+
+</script>
+
+</body>
+</html>
