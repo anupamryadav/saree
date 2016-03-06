@@ -38,8 +38,10 @@ delete $http.defaults.headers.common['X-Requested-With'];
 this.getData = function() {
     $http({
         method: 'GET',
-        url: 'http://affiliate-feeds.snapdeal.com/feed/api/category/v1:586:629056481240?expiresAt=1457145000002&signature=gkvlpkaqikflmnnfifvt'
-        
+        url: 'http://affiliate-feeds.snapdeal.com/feed/api/category/v1:586:629056481240?expiresAt=1457145000002&signature=gkvlpkaqikflmnnfifvt',
+        headers: {
+   'Access-Control-Allow-Origin' : 'http://affiliate-feeds.snapdeal.com/feed/api/category/v1:586:629056481240',
+   }
      }).success(function(data){
          return data
     }).error(function(){
