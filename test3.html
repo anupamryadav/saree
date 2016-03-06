@@ -37,13 +37,13 @@ app.service('dataService', function($http) {
 delete $http.defaults.headers.common['X-Requested-With'];
 this.getData = function() {
     $http({
-        method: 'jsonp',
-        url: 'http://affiliate-feeds.snapdeal.com/feed/api/category/v1:586:629056481240?expiresAt=1457145000002&signature=gkvlpkaqikflmnnfifvt',
-       
+        method: 'GET',
+        url: 'http://affiliate-feeds.snapdeal.com/feed/api/category/v1:586:629056481240?expiresAt=1457145000002&signature=gkvlpkaqikflmnnfifvt'
+        
      }).success(function(data){
          return data
     }).error(function(){
-        alert("error");
+        
     });
  }
 });
