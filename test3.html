@@ -1,10 +1,62 @@
 <!DOCTYPE html>
 <html>
+<head>
+     <meta charset="UTF-8">
+  <script src="angular.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>
+ 
+  <link href="common1.css" rel="stylesheet">
+</head>
 <body>
 
-<?php
-echo "My first PHP script!";
-?> 
+<div ng-app="myApp" >
+  <div ng-controller="mycontroller">
+  </div>
+</div>
+
+
+<script>
+var app = angular.module('myApp', []);
+
+app.config(['$httpProvider', function($httpProvider) {  
+  
+    $httpProvider.defaults.useXDomain = true;
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
+          $httpProvider.interceptors.push('myInterceptor');
+}]);
+
+app.factory('myInterceptor', [function() {  
+    var timestampMarker = {
+        request: function(config) {
+          config.headers['Snapdeal-Affiliate-Id'] = "70203"
+          config.headers['Snapdeal-Token-Id']= "c8828539bc89f85eedd5d009d1fedf"        
+          config.headers['Accept']= "application/json"
+          
+
+           console.log(config);
+
+            return config;
+        },
+        response: function(response) {
+            console.log(response);
+            return response;
+        }
+    };
+    return timestampMarker;
+}]);
+
+
+app.controller('mycontroller', ['$scope', '$http', function($scope, $http) {
+   $http.defaults.useXDomain = true;
+      $scope.requestTime = '[waiting]';
+      $http.get('http://affiliate-feeds.snapdeal.com/feed/api/category/v1:586:629056481240?expiresAt=1457145000002&signature=gkvlpkaqikflmnnfifvt').then(function(response) {
+          var time = response.config.responseTimestamp - response.config.requestTimestamp;
+          $scope.requestTime = (time / 1000);
+      });
+    }]);
+
+
+</script>
 
 </body>
 </html>
