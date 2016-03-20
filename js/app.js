@@ -9,13 +9,36 @@ $scope.showData = function( ){
 $scope.titles ="Online marketplace in India for Men, Women";
 $scope.Keyword ="Shoppingfunnel, India,http://www.Shoppingfunnel.com ,Shoppingfunnel.com,online Shopping, online saree  store, online saree mall, Buy saree , Buy discount saree , discount saree,women-fashion,sarees ,designer sarees, womens sarees ,women party wear designer sarees ,cotton sarees ,designer bollywood party wear sarees,online shopping funnel";
 
-							$http.get("data/saree.json")
+
+//Parse
+
+ Parse.initialize("BtUb3tIMS0QgBhhuUlC5dcoU6bbDjHJBnIrx2sJr","BeIw56xBQw4ENNnrEFyqbMMkOselNeOEOVcSz5i6");
+  
+
+
+    Parse.Cloud.run('hello', {}, {
+        success: function(result) {
+
+        	$scope.data =  result.text;
+          
+        },
+        error: function(error) {
+        console.log("Oops! Couldn't POST from Cloud Code successfully..  :"+ error)
+        }
+      });
+   
+}
+   //end parse
+
+
+
+							/*$http.get("data/saree.json")
 	.success(function (response) 
 					 {
 									$scope.data = response.products;
 									
 							}); 
-}
+}*/
 
 					 
 						 $scope.getCategories = function () {
