@@ -16,7 +16,7 @@ $scope.Keyword ="Shoppingfunnel, India,http://www.Shoppingfunnel.com ,Shoppingfu
   
 
 
-    Parse.Cloud.run('hello', {methodname:'Watches'}, {
+    Parse.Cloud.run('hello', {methodname:'Womens_Ethnic_Wear'}, {
         success: function(result) {
 
         	$scope.data =  result.data.products;
