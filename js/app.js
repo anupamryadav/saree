@@ -19,7 +19,7 @@ $scope.Keyword ="Shoppingfunnel, India,http://www.Shoppingfunnel.com ,Shoppingfu
     Parse.Cloud.run('hello', {}, {
         success: function(result) {
 
-        	$scope.data =  result.text;
+        	$scope.data =  result.data.products;
           
         },
         error: function(error) {
