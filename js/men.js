@@ -1,3 +1,5 @@
+Parse.initialize("BtUb3tIMS0QgBhhuUlC5dcoU6bbDjHJBnIrx2sJr","BeIw56xBQw4ENNnrEFyqbMMkOselNeOEOVcSz5i6");
+
 angular.module('infiniteScrollTutorial', ['infinite-scroll'])
 				.controller('infiniteScrollController', function ($scope, $http) {
 $scope.totalDisplayed = 6
@@ -6,16 +8,39 @@ $scope.totalDisplayed = 6
 							 $scope.filter = {};
 $scope.showData = function( ){
 
-$scope.titles ="Online Shopping Site in India for Men";
+$scope.titles ="Online marketplace in India for Men, Women";
 $scope.Keyword ="Shoppingfunnel, India,http://www.Shoppingfunnel.com ,Shoppingfunnel.com,online Shopping, online saree  store, online saree mall, Buy saree , Buy discount saree , discount saree,women-fashion,sarees ,designer sarees, womens sarees ,women party wear designer sarees ,cotton sarees ,designer bollywood party wear sarees,online shopping funnel";
 
-							$http.get("data/men.json")
+
+//Parse
+
+ 
+  
+
+
+    Parse.Cloud.run('hello', {methodname:'Mens_Clothing'}, {
+        success: function(result) {
+
+        	$scope.data =  result.data.products;
+          
+        },
+        error: function(error) {
+        console.log("Oops! Couldn't POST from Cloud Code successfully..  :"+ error)
+        }
+      });
+   
+}
+   //end parse
+
+
+
+							/*$http.get("data/saree.json")
 	.success(function (response) 
 					 {
 									$scope.data = response.products;
 									
 							}); 
-}
+}*/
 
 					 
 						 $scope.getCategories = function () {
@@ -49,5 +74,44 @@ $scope.getMoreData = function () {
 				return true;
 		}   
 
-});
+})
+.run(['$rootScope', function($scope) {
+  $scope.scenario = 'Sign up';
+  $scope.currentUser = Parse.User.current();
+  
+  $scope.signUp = function(form) {
+    var user = new Parse.User();
+    user.set("email", form.email);
+    user.set("username", form.username);
+    user.set("password", form.password);
+    
+    user.signUp(null, {
+      success: function(user) {
+        $scope.currentUser = user;
+        $scope.$apply();
+      },
+      error: function(user, error) {
+        alert("Unable to sign up:  " + error.code + " " + error.message);
+      }
+    });    
+  };
+  
+  $scope.logIn = function(form) {
+    Parse.User.logIn(form.username, form.password, {
+      success: function(user) {
+        $scope.currentUser = user;
+        $scope.$apply();
+      },
+      error: function(user, error) {
+        alert("Unable to log in: " + error.code + " " + error.message);
+      }
+    });
+  };
+  
+  $scope.logOut = function(form) {
+    Parse.User.logOut();
+    $scope.currentUser = null;
+  };
+}]);
+
 
