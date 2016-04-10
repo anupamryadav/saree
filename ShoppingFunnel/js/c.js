@@ -10,16 +10,12 @@ $scope.totalDisplayed = 6
             $scope.users=[];
                $scope.filter = {};
                
-Parse.initialize("BtUb3tIMS0QgBhhuUlC5dcoU6bbDjHJBnIrx2sJr","BeIw56xBQw4ENNnrEFyqbMMkOselNeOEOVcSz5i6");
 
 $scope.titles ="Online marketplace in India for Men, Women";
 $scope.Keyword ="Shoppingfunnel, India,http://www.Shoppingfunnel.com ,Shoppingfunnel.com,online Shopping, online saree  store, online saree mall, Buy saree , Buy discount saree , discount saree,women-fashion,sarees ,designer sarees, womens sarees ,women party wear designer sarees ,cotton sarees ,designer bollywood party wear sarees,online shopping funnel";
 
 
 //Parse
-
-
-
 
     Parse.Cloud.run('hello', {methodname: $routeParams.test}, {
         success: function(result) {
