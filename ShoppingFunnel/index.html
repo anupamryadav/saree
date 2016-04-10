@@ -1,0 +1,138 @@
+<html ng-app = "mainApp" ng-controller="MainCtrl" ng-init="showData()" >
+     <head>
+        <title>Online marketplace in India for Men, Women</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+          
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+        <script src="https://raw.githubusercontent.com/BinaryMuse/ngInfiniteScroll/1.0.0/build/ng-infinite-scroll.min.js"></script>
+        <script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/parse/1.6.7/parse.min.js"></script>
+       
+
+       
+             <link href="css/bootstrap.css" rel="stylesheet">
+             
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <link href="css/style.css" rel="stylesheet">
+ <meta name="keywords" content="{{Keyword}}" />
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/jquery.faloading.min.css"/>
+    <script type="text/javascript" src="js/jquery.faloading-0.2.min.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     <script src="routing.js"></script>
+      <script src="add.js"></script>
+     <script src="js/men.js"></script>   
+     <script src="js/c.js"></script>      
+<script src="WomenClothing.js"></script>      
+      
+    <script type="text/javascript">
+   
+      var loading_time = 10000;
+
+
+      $(function() {
+
+        
+          $("body").faLoading('fa-cog');
+
+          setTimeout(function() {
+            $("body").faLoading(false);
+          },loading_time);
+  
+
+      
+      });     
+    </script>
+    </head>
+   
+   <body>     
+      <div  >
+         <header>
+        <div class="container">
+            <div class="row">
+
+                <!-- Logo -->
+                    <div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
+                        <div class="well logo">
+                            <a href="index.html">
+                              <img src="images/logo.png" alt="" style="padding-top: 20px;width: 80%;"> </a>
+                            <div></div>
+                        </div>
+                    </div>
+                    <!-- End Logo -->
+
+                    <!-- Search Form -->
+                    <div class="col-lg-4 col-md-3">
+                      
+                        <div class="well">
+                           
+
+                           <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login/Registration</button>
+                        </div>
+                        </div>
+ <div class="col-lg-4 col-md-3">
+
+  <p>
+                        <div ng-show="currentUser" class="pull-right">
+          <b>Welcome {{currentUser.get('username')}}</b>
+    <button ng-click="logOut(user)">Log out</button>
+    </div>
+  </p>
+   
+  
+</div>
+
+
+                    
+                    <!-- End Search Form -->
+
+                    <!-- Shopping Cart List -->
+                   
+                    <!-- End Shopping Cart List -->
+            </div>
+        </div>
+      </header
+           <!-- Navigation -->
+     <div ng-include="'nav.html'"></div>
+      <!-- End Navigation -->
+      
+      
+         <div ng-view></div>
+         
+        <a href="#top" class="back-top text-center" onclick="$('body,html').animate({scrollTop:0},500); return false">
+        <i class="fa fa-angle-double-up"></i>
+      </a>
+      
+           <!-- footer -->
+         <div ng-include="'footer.html'"></div>
+           <!-- footer -->
+      </div>
+      <div ng-include="'Login.html'"></div>
+
+  <script src="js/bootstrap.js"></script>
+      <script src="js/jquery.blImageCenter.js"></script>
+      <script src="js/arnav.js"></script>
+      
+
+
+
+            <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67526661-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+   </body>
+   
+</html>
