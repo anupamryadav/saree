@@ -1,3 +1,4 @@
+ Parse.initialize("BtUb3tIMS0QgBhhuUlC5dcoU6bbDjHJBnIrx2sJr","BeIw56xBQw4ENNnrEFyqbMMkOselNeOEOVcSz5i6");
  var mainApp = angular.module("mainApp", ['ngRoute','infinite-scroll']);
          mainApp.config(['$routeProvider', function($routeProvider) {
      
@@ -5,77 +6,77 @@
 
               $routeProvider
       .when('/', {
-        templateUrl: 'WomenClothing.html',
-        controller: 'WomenClothingController',
+        templateUrl: 'Common.html',
+        controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Womens_Ethnic_Wear'; }
         }
       })
       .when('/Mens_Clothing', {
-        templateUrl: 'men.html',
-        controller: 'ViewmenController',
+        templateUrl: 'Common.html',
+        controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Mens_Clothing'; }
         }
       })
        .when('/men_Footware', {
-        templateUrl: 'men.html',
+        templateUrl: 'Common.html',
         controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Mens_Footwear'; }
         }
       })
         .when('/Sunglasses', {
-        templateUrl: 'men.html',
+        templateUrl: 'Common.html',
         controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Eyewear'; }
         }
       })
         .when('/watches', {
-        templateUrl: 'men.html',
+        templateUrl: 'Common.html',
         controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Watches'; }
         }
       })
         .when('/Jewellery', {
-        templateUrl: 'men.html',
+        templateUrl: 'Common.html',
         controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Jewellery'; }
         }
       })
         .when('/Furniture', {
-        templateUrl: 'men.html',
+        templateUrl: 'Common.html',
         controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Furniture'; }
         }
       })
         .when('/Office_Equipment', {
-        templateUrl: 'men.html',
+        templateUrl: 'Common.html',
         controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Office_Equipment'; }
         }
       })
         .when('/Bags_Luggage', {
-        templateUrl: 'men.html',
+        templateUrl: 'Common.html',
         controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Bags_Luggage'; }
         }
       })
         .when('/Mobiles_Tablets', {
-        templateUrl: 'men.html',
+        templateUrl: 'Common.html',
         controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Mobiles_Tablets'; }
         }
       })
         .when('/Kids_Footwear', {
-        templateUrl: 'men.html',
+        templateUrl: 'Common.html',
         controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Computers_Peripherals'; }
@@ -103,7 +104,7 @@
         }
       })
            .when('/Womens_Ethnic_Wear', {
-        templateUrl: 'men.html',
+        templateUrl: 'Common.html',
         controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Womens_Ethnic_Wear'; }
