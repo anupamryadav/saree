@@ -6,8 +6,8 @@
 
               $routeProvider
       .when('/', {
-        templateUrl: 'Common.html',
-        controller: 'MainCtrl',
+             templateUrl: 'home.html',
+          controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Womens_Ethnic_Wear'; }
         }
@@ -109,6 +109,14 @@
         resolve: {
             test: function ($route) { $route.current.params.test = 'Womens_Ethnic_Wear'; }
         }
+      })
+           .when('/index', {
+        templateUrl: 'home.html',
+          controller: 'MainCtrl',
+        resolve: {
+            test: function ($route) { $route.current.params.test = 'Womens_Ethnic_Wear'; }
+        }
+        
       })
       .otherwise({
         redirectTo: '/a'

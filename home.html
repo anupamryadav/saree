@@ -1,0 +1,163 @@
+
+
+    <div class="container main-container">
+        <div class="row">
+
+          <!-- Slider -->
+     <div class="col-lg-12 col-md-12">
+                     <div class="slider">
+
+                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!--   Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+             
+        <a href="http://dl.flipkart.com/dl/buy-gift-voucher?affid=anupamrya" target="_blank"> <img src="images/banner_slider-2.png" alt="" style="height:400ox"></a>
+          </div>
+
+      
+        
+         
+
+          <div class="item">
+    <a href="http://dl.flipkart.com/dl/buy-gift-voucher?affid=anupamrya" target="_blank">  <img src="images/banner_slider-1.png" alt=""></a>
+          </div>
+
+     
+                    
+
+
+
+        </div>
+        </div>
+                    </div>
+                </div>
+            <!-- End Slider -->
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12">
+
+            <!-- Categories -->
+            <div class="col-lg-12 col-md-12 col-sm-6">
+              <div class="no-padding">
+                  <span class="title">CATEGORIES</span>
+                </div>
+
+          <div id="main_menu">
+                        <div class="list-group panel panel-cat">
+                                             <a href="#Mens_Clothing" class="list-group-item">Men wear</a>
+                                <a href="#men_Footware" class="list-group-item">men Footwear</a> 
+                                  <a href="#watches" class="list-group-item">Watches</a> 
+                                  <a href="#Sunglasses" class="list-group-item">Sunglasses</a> 
+                                   <a href="#MenCloths" class="list-group-item">Men Cloths</a> 
+                                    <a href="#Womens_Ethnic_Wear" class="list-group-item">Saree</a>
+                            <a href="#Women_dress" class="list-group-item">Dress</a>
+                            <a href="#Footwear" class="list-group-item">Women Footwear</a>
+                            <a href="#Beauty" class="list-group-item">Beauty Personal Care</a>          
+                            <a href="#Jewellery" class="list-group-item">Jewellery</a>       
+                              <a href="#Mobiles_Tablets" class="list-group-item">Mobile</a> 
+                                     <a href="#Computers_Peripherals" class="list-group-item">Computers & Peripherals</a> 
+                         <a href="#Bags_Luggage" class="list-group-item">Bags</a> 
+                             <a href="#Appliances" class="list-group-item">Appliances</a> 
+                                    <a href="#Kitchenware" class="list-group-item" >Kitchen ware</a> 
+                                    <a href="#Office_Equipment" class="list-group-item" >Office Equipment</a> 
+                                    <a href="#Furniture" class="list-group-item">Furniture</a> 
+                                    <a href="#Fragrances" class="list-group-item">Fragrances</a>            
+                        </div>
+                    </div>
+
+        </div>
+        <!-- End Categories -->
+
+        <!-- Best Seller 
+        <div class="col-lg-12 col-md-12 col-sm-6">
+          <div class="no-padding">
+                  <span class="title">BEST SELLER</span>
+                </div>
+          <div class="hero-feature">
+                    <div class="thumbnail text-center">
+                    
+
+                        <div class="caption prod-caption">
+                           <div data-WRID="WRID-146056699773954780" data-widgetType="relatedProducts" data-class="affiliateAdsByFlipkart" height="250" width="300" ></div><script async src="//affiliate.flipkart.com/affiliate/widgets/FKAffiliateWidgets.js"></script>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-feature hidden-sm">
+                    <div class="thumbnail text-center">
+                      <a style="overflow: hidden; position: relative;" href="#detail" class="link-p">
+                          <img style="position: absolute; width: 280px; height: auto; max-width: none; max-height: none; left: -28px; top: 0px;" src="http://demo.18maret.com/demo/mimity/v1.4/images/product-9.jpg" alt="">
+                      </a>
+                        <div class="caption prod-caption">
+                            <h4><a href="#detail">Ohio State College T-Shirt</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!</p>
+                            <p>
+                              </p><div class="btn-group">
+                                <a href="##" class="btn btn-default">$ 924.25</a>
+                                <a href="##" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+                              </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        End Best Seller -->
+
+          </div>
+
+          <div class="clearfix visible-sm"></div>
+
+      <!-- Featured -->
+          
+
+          <!-- End Featured -->
+
+          <div class="clearfix visible-sm"></div>
+
+      <!-- Adidas Category -->
+          <div class="col-lg-9 col-md-9 col-sm-12">
+        <div class="col-lg-12 col-sm-12">
+                <span class="title">Product</span>
+              </div>
+   <div infinite-scroll="getMoreData()" infinite-scroll-distance='2'>
+<span ng-repeat="x in filtered=(data | filter:filterByCategory)   | limitTo: 12" >
+  <div class="col-lg-4 col-sm-4 hero-feature text-center">
+     <div class="thumbnail">
+                                    <a href="#{{x.link}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
+                                <img src="{{x.imageLink}}" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
+                            </a>                            
+                            <div class="caption prod-caption">
+                                <h4>
+                                <a class="link-p" style="overflow: hidden; position: relative;" href='{{x.link}}' target=_blank>{{x.title}}</a></h4>
+                                <p></p>
+                                <p>
+                                    </p><div class="btn-group">
+                                     
+                                        <span class="btn strikethrough">Rs {{x.mrp}}</span>
+                                           <a href="##" class="btn btn-default">Rs {{x.offerPrice}}</a>
+                                        <a href="#{{x.link}}" target="_blank" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+                                    </div>
+                                <p></p>
+                            </div>
+                        </div>
+   </div>
+                        
+
+  </span>
+
+</div> 
+
+      </div>
+      <!-- End Adidas Category -->
+
+        </div>
+  </div>
+
+ 
+
+    <a style="display: block;" href="##top" class="back-top text-center" onclick="$('body').animate({scrollTop:0},500); return false">
+      <i class="fa fa-angle-double-up"></i>
+    </a>
+
