@@ -79,7 +79,7 @@
         templateUrl: 'Common.html',
         controller: 'MainCtrl',
         resolve: {
-            test: function ($route) { $route.current.params.test = 'Computers_Peripherals'; }
+            test: function ($route) { $route.current.params.test = 'Kids_Footwear'; }
         }
       })
          .when('/about', {
