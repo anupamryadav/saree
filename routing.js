@@ -131,6 +131,13 @@
             test: function ($route) { $route.current.params.test = 'Beauty_Personal_Care'; }
         }
       })
+                 .when('/Fragrances', {
+        templateUrl: 'Common.html',
+        controller: 'MainCtrl',
+        resolve: {
+            test: function ($route) { $route.current.params.test = 'Fragrances'; }
+        }
+      })
            .when('/index', {
         templateUrl: 'home.html',
           controller: 'MainCtrl',
