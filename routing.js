@@ -145,11 +145,11 @@
             test: function ($route) { $route.current.params.test = 'Appliances'; }
         }
       })
-                      .when('/Kitchen_Appliances', {
+                      .when('/Kitchenware', {
         templateUrl: 'Common.html',
         controller: 'MainCtrl',
         resolve: {
-            test: function ($route) { $route.current.params.test = 'Kitchen_Appliances'; }
+            test: function ($route) { $route.current.params.test = 'Kitchenware'; }
         }
       })
            .when('/index', {
