@@ -63,7 +63,7 @@
       })
         .when('/Bags_Luggage', {
         templateUrl: 'Common.html',
-        controller: 'MainCtrl',
+        controller: 'MainCtrl2',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Bags_Luggage'; }
         }
@@ -136,6 +136,13 @@
         controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Fragrances'; }
+        }
+      })
+                     .when('/Appliances', {
+        templateUrl: 'Common.html',
+        controller: 'MainCtrl',
+        resolve: {
+            test: function ($route) { $route.current.params.test = 'Appliances'; }
         }
       })
            .when('/index', {
