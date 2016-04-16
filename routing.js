@@ -97,7 +97,7 @@
         }
       })
           .when('/Computers_Peripherals', {
-        templateUrl: 'contact.html',
+        templateUrl: 'Common.html',
         controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Computers_Peripherals'; }
