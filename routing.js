@@ -110,6 +110,27 @@
             test: function ($route) { $route.current.params.test = 'Womens_Ethnic_Wear'; }
         }
       })
+             .when('/Womens_Footwear', {
+        templateUrl: 'Common.html',
+        controller: 'MainCtrl',
+        resolve: {
+            test: function ($route) { $route.current.params.test = 'Womens_Footwear'; }
+        }
+      })
+                .when('/Womens_Clothing', {
+        templateUrl: 'Common.html',
+        controller: 'MainCtrl',
+        resolve: {
+            test: function ($route) { $route.current.params.test = 'Womens_Clothing'; }
+        }
+      })
+                .when('/Beauty_Personal_Care', {
+        templateUrl: 'Common.html',
+        controller: 'MainCtrl',
+        resolve: {
+            test: function ($route) { $route.current.params.test = 'Beauty_Personal_Care'; }
+        }
+      })
            .when('/index', {
         templateUrl: 'home.html',
           controller: 'MainCtrl',
@@ -125,5 +146,6 @@
 
          }]);
          
+
 
 			
