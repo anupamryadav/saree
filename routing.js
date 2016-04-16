@@ -145,6 +145,13 @@
             test: function ($route) { $route.current.params.test = 'Appliances'; }
         }
       })
+                      .when('/Kitchen_Appliances', {
+        templateUrl: 'Common.html',
+        controller: 'MainCtrl',
+        resolve: {
+            test: function ($route) { $route.current.params.test = 'Kitchen_Appliances'; }
+        }
+      })
            .when('/index', {
         templateUrl: 'home.html',
           controller: 'MainCtrl',
