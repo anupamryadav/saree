@@ -78,7 +78,7 @@
 <loading></loading>
 
 
-            <div infinite-scroll="getMoreData()" infinite-scroll-distance='2'>
+            <div infinite-scroll="getMoreData()" >
 <span ng-repeat="x in filtered=(data | filter:filterByCategory)   | limitTo:totalDisplayed |filter:query" >
   <div class="col-lg-4 col-sm-4 hero-feature text-center">
      <div class="thumbnail">
