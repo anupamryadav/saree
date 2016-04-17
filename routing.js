@@ -161,7 +161,7 @@
         
       })
       .otherwise({
-        redirectTo: '/a'
+        redirectTo: '/'
       });
 
 
