@@ -1,67 +1,52 @@
 
-mainApp.controller('MainCtrl', function ($scope, $http,$routeParams) {
+mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
 
-
-   var paramValue = $routeParams.test;;      
-
-
-$scope.totalDisplayed = 6
-
-            $scope.users=[];
-               $scope.filter = {};
-               
-
-$scope.titles ="Online marketplace in India for Men, Women";
-$scope.Keyword ="Shoppingfunnel, India,http://www.Shoppingfunnel.com ,Shoppingfunnel.com,online Shopping, online saree  store, online saree mall, Buy saree , Buy discount saree , discount saree,women-fashion,sarees ,designer sarees, womens sarees ,women party wear designer sarees ,cotton sarees ,designer bollywood party wear sarees,online shopping funnel";
-
-
+      $scope.loading = true;
+      var paramValue = $routeParams.test;;      
+      $scope.totalDisplayed = 6
+      $scope.users=[];
+      $scope.filter = {};
+      
+   
 //Parse
 
-    Parse.Cloud.run('hello', {methodname: $routeParams.test}, {
-        success: function(result) {
- $scope.data={};
-          $scope.data =  result.data.products;
-          
-        },
-        error: function(error) {
-        console.log("Oops! Couldn't POST from Cloud Code successfully..  :"+ error)
-        }
+      Parse.Cloud.run('hello', {methodname: $routeParams.test}, {
+      success: function(result) {      
+      $scope.data =  result.data.products;
+      $scope.loading = false;
+      },
+      error: function(error) {
+      console.log("Oops! Couldn't POST from Cloud Code successfully..  :"+ error)
+      $scope.loading = false;
+      }
       });
-   
 
- 
+      $scope.getCategories = function () 
 
-           
-             $scope.getCategories = function () {
-        return ($scope.data || []).map(function (w) {
-            return w.subCategoryName;
-        }).filter(function (w, idx, arr) {
-            return arr.indexOf(w) === idx;
-        });
-    };
+      {
+      return ($scope.data || []).map(function (w) {
+      return w.subCategoryName;
+      }).filter(function (w, idx, arr) {
+      return arr.indexOf(w) === idx;
+      });
+      };
+      $scope.getMoreData = function () 
+      {   
+      $scope.totalDisplayed += 3;  
+      }
 
+      $scope.filterByCategory = function (data) {
+      return $scope.filter[data.subCategoryName] || noFilter($scope.filter);
+      };
 
-                      
-$scope.getMoreData = function () {
-   
-    
-          $scope.totalDisplayed += 3;  
-
-
-}
-
-   $scope.filterByCategory = function (data) {
-        return $scope.filter[data.subCategoryName] || noFilter($scope.filter);
-    };
-    
-    function noFilter(filterObj) {
-        for (var key in filterObj) {
-            if (filterObj[key]) {
-                return false;
-            }
-        }
-        return true;
-    }   
+      function noFilter(filterObj) {
+      for (var key in filterObj) {
+      if (filterObj[key]) {
+      return false;
+      }
+      }
+      return true;
+      }   
 
 })
 .run(['$rootScope', function($scope) {
