@@ -13,8 +13,10 @@ mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
       Parse.Cloud.run('hello', {methodname: $routeParams.test}, {
       success: function(result) {      
       $scope.data =  result.data.products;
-      $scope.loading = false;
-      },
+           $scope.loading = false;
+
+      $scope.$apply();
+       },
       error: function(error) {
       console.log("Oops! Couldn't POST from Cloud Code successfully..  :"+ error)
       $scope.loading = false;

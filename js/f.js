@@ -30,7 +30,7 @@ mainApp.controller('MainCtrlfk', function($scope, $http,$routeParams) {
           {
            $scope.data.push($scope.productBaseInfo[i].productAttributes);
          };
-
+          $scope.$apply();
          console.log($scope.data);
          $scope.loading = false;
         };
