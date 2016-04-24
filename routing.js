@@ -56,7 +56,7 @@
       })
         .when('/Office_Equipment', {
         templateUrl: 'Common.html',
-        controller: 'MainCtrl',
+        controller: 'MainCtr',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Office_Equipment'; }
         }
