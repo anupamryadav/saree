@@ -160,13 +160,7 @@
         }
         
       })
-            .when('/Mens_Clothing', {
-        templateUrl: 'fk.html',
-        controller: 'MainCtrlfk',
-        resolve: {
-            test: function ($route) { $route.current.params.test = 'Mens_Clothing'; }
-        }
-      })
+           
       .otherwise({
         redirectTo: '/'
       });
