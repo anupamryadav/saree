@@ -6,6 +6,7 @@ mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
       $scope.totalDisplayed = 6
       $scope.users=[];
       $scope.filter = {};
+      $scope.data={};
       var urlval="";
 
 //Parse
