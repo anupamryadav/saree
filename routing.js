@@ -63,7 +63,7 @@
       })
         .when('/Bags_Luggage', {
         templateUrl: 'Common.html',
-        controller: 'MainCtrl2',
+        controller: 'MainCtrl',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Bags_Luggage'; }
         }
