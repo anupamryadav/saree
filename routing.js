@@ -156,7 +156,7 @@
         templateUrl: 'fk.html',
           controller: 'MainCtrlfk',
         resolve: {
-            test: function ($route) { $route.current.params.test = 'https://affiliate-api.flipkart.net/affiliate/feeds/anupamrya/category/j9e-abm-c54.json?expiresAt=1461454595827&sig=5f4a2610915343ac369bf655ee95c266'; }
+            test: function ($route) { $route.current.params.test = 'kids_clothing'; }
         }
         
       })
