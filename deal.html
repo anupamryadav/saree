@@ -1,0 +1,85 @@
+
+
+ <div class="container main-container">
+          <div class="row">
+          
+
+            <div class="clearfix visible-sm"></div>
+
+        <!-- Catalogue -->
+            <div class="col-lg-12 col-md-12 col-sm-12" >
+              <div class="col-lg-12 col-sm-12">
+                  <span class="title">Deals of the Day</span>
+                </div>
+               
+
+              
+    <form class="form-inline">
+  
+
+              
+       <div class="col-lg-9 col-md-9 col-sm-12">
+
+
+</div>
+
+    </form>
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+<div class="col-lg-4 col-sm-4" >
+
+</div>
+<div class="col-lg-4 col-sm-4 centered" >
+<loading></loading>
+</div>
+<div class="col-lg-4 col-sm-4" >
+
+</div>
+
+          <br/>
+                <br/>
+
+        </div>
+
+                
+
+
+
+
+    <div infinite-scroll="getMoreData()" >
+
+
+    <span ng-repeat="x in filtered=(data | filter:filterByCategory)   | limitTo:totalDisplayed |filter:query">
+             <div class="col-lg-3 col-sm-3 hero-feature text-center">
+
+         <div class="thumbnail">
+                                        <a href="{{x.url}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
+                                            
+                                                
+                                    <img src="{{x.imageUrls[0].url}}" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
+                                            
+                                </a>                            
+                                <div class="caption prod-caption">
+                                    <h4>
+                                    <a class="link-p" style="overflow: hidden; position: relative;" href='{{x.link}}' target=_blank>{{x.description}}</a></h4>
+                                    <p></p>
+                                    <p>
+                                        </p><div class="btn-group">
+                                         
+                                   
+                                               <a href="#" class="btn btn-default">{{x.title}}</a></span>
+                                            
+                                        </div>
+                                    <p></p>
+                                </div>
+                            </div>
+             </div>
+                </span>
+         </span>
+                    </span>
+        </span>
+    </div>
+
+
+        </div>
+                  </div>
+    </div>
