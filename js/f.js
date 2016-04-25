@@ -2,7 +2,7 @@
 mainApp.controller('MainCtrlfk', function($scope, $http,$routeParams) {
 
       $scope.loading = true;
-      var paramValue = $routeParams.test;;      
+      var paramValue = $routeParams.test;     
       $scope.totalDisplayed = 6
       $scope.users=[];
       
@@ -13,7 +13,7 @@ mainApp.controller('MainCtrlfk', function($scope, $http,$routeParams) {
     
 //Parse
 
-       var url="https://affiliate-api.flipkart.net/affiliate/feeds/anupamrya/category/j9e-abm-c54.json?expiresAt=1461454595827&sig=5f4a2610915343ac369bf655ee95c266";
+       var url=paramValue;
           Parse.Cloud.run('hellofk', {methodname: url}, {
           success: function(result) {      
         setTimeout(function(){     
