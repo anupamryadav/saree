@@ -6,8 +6,8 @@
 
               $routeProvider
       .when('/', {
-             templateUrl: 'home.html',
-          controller: 'MainCtrl',
+             templateUrl: 'deal.html',
+          controller: 'MainCtrldeal',
         resolve: {
             test: function ($route) { $route.current.params.test = 'Womens_Ethnic_Wear'; }
         }
