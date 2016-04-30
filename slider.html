@@ -8,10 +8,10 @@
             <div class="col-md-3">
                 <!-- Controls -->
                 <div class="controls pull-right hidden-xs">
-                    <a class="left fa fa-chevron-left btn btn" href="#carousel-example"
+                 <!--    <a class="left fa fa-chevron-left btn btn" href="#carousel-example"
                         data-slide="prev"></a><a class="right fa fa-chevron-right btn" href="#carousel-example"
 
-                            data-slide="next"></a>
+                            data-slide="next"></a>-->
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
 
 
 
-                        <span ng-repeat="x in filtered=(data | filter:filterByCategory)   | limitTo:4 " >
+                        <span ng-repeat="x in filtered=(data | filter:filterByCategory)   | limitTo:24 " ng-show="$index % 6 == 0">
                         <div class="col-sm-3">
                             <div class="col-item">
                                 <div class="info">
@@ -59,9 +59,9 @@
                         
                     </div>
                 </div>
-                <div class="item">
+                <div class="item ">
                     <div class="row">
-                        <span ng-repeat="x in filtered=(data | filter:filterByCategory)   | limitTo:4 " >
+                        <span ng-repeat="x in filtered=(data | filter:filterByCategory)   | limitTo:16" ng-show="$index % 4 == 0"  >
                         <div class="col-sm-3">
                             <div class="col-item">
                                 <div class="info">
