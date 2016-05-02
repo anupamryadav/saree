@@ -92,7 +92,7 @@ page :{{totalDisplayed}}
                                         <a href="{{x.productUrl}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
                                             
                                                 
-                                    <img src="{{x.imageUrls['400x400']}}" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
+                                    <img src="{{x.imageUrls['400x400']}}" alt="" >
                                             
                                 </a>                            
                                 <div class="caption prod-caption">
@@ -103,7 +103,7 @@ page :{{totalDisplayed}}
                                         </p><div class="btn-group">
                                          <span class="btn strikethrough">Rs {{x.maximumRetailPrice['amount']}}</span>
                                    
-                                               <a href="#" class="btn btn-default">Rs {{x.sellingPrice['amount']}}</a></span>
+                                               <a href="#" class="btn btn-default">Rs {{x.flipkartSellingPrice['amount']}}</a></span>
                                             <a href="{{x.productUrl}}" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
                                         </div>
                                     <p></p>

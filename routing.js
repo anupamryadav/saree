@@ -152,9 +152,9 @@
             test: function ($route) { $route.current.params.test = 'Kitchenware'; }
         }
       })
-           .when('/AC', {
+           .when('/kid', {
         templateUrl: 'fk.html',
-          controller: 'MainCtrlfk',
+          controller: 'MainCtrlfkg',
         resolve: {
             test: function ($route) { $route.current.params.test = 'kids_clothing'; }
         }
