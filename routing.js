@@ -160,6 +160,14 @@
         }
         
       })
+           .when('/Toys', {
+        templateUrl: 'fk.html',
+          controller: 'MainCtrlfkg',
+        resolve: {
+            test: function ($route) { $route.current.params.test = 'toys'; }
+        }
+        
+      })
            
       .otherwise({
         redirectTo: '/'
