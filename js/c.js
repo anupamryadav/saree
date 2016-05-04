@@ -29,6 +29,8 @@ mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
       $scope.getCategories = function () 
 
       {
+
+        if ($scope.data != null) {
          setTimeout(function(){     
         
       return ($scope.data || []).map(function (w) {
@@ -37,6 +39,8 @@ mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
       return arr.indexOf(w) === idx;
       });
        }, 1000);
+         };
+
       };
       $scope.getMoreData = function () 
       {   
