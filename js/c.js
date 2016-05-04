@@ -24,7 +24,7 @@ mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
       $scope.loading = false;
       }
       });
-
+});
 
       $scope.getCategories = function () 
       {
@@ -35,7 +35,7 @@ mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
       });
        }
 
-      };
+      
       $scope.getMoreData = function () 
       {   
       $scope.totalDisplayed += 3;  
