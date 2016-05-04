@@ -25,7 +25,7 @@ mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
       }
       });
 
-};
+
       $scope.getCategories = function () 
       {
       return ($scope.data || []).map(function (w) {
@@ -35,7 +35,7 @@ mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
       });
        }
 
-      
+      };
       $scope.getMoreData = function () 
       {   
       $scope.totalDisplayed += 3;  
