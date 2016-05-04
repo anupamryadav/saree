@@ -5,8 +5,8 @@ mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
       var paramValue = $routeParams.test;;      
       $scope.totalDisplayed = 6
       $scope.users=[];
-      $scope.filter = {};
-      $scope.data={};
+      $scope.filter = [];
+      $scope.data=[];
       var urlval="";
 
 //Parse
@@ -26,34 +26,38 @@ mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
       });
 
 
-      $scope.getCategories = function () 
-      {
-      return ($scope.data || []).map(function (w) {
-      return w.subCategoryName;
-      }).filter(function (w, idx, arr) {
-      return arr.indexOf(w) === idx;
-      });
-       }
+             $scope.getCategories = function () {
+        return ($scope.data || []).map(function (w) {
+            return w.subCategoryName;
+        }).filter(function (w, idx, arr) {
+            return arr.indexOf(w) === idx;
+        });
+    };
 
-      
-      $scope.getMoreData = function () 
-      {   
-      $scope.totalDisplayed += 3;  
-      }
 
-      $scope.filterByCategory = function (data) {
-      return $scope.filter[data.subCategoryName] || noFilter($scope.filter);
-      };
+                      
+$scope.getMoreData = function () {
+   
+    
+          $scope.totalDisplayed += 3;  
 
-      function noFilter(filterObj) {
-      for (var key in filterObj) {
-      if (filterObj[key]) {
-      return false;
-      }
-      }
-      return true;
-      }   
 
+}
+
+   $scope.filterByCategory = function (data) {
+        return $scope.filter[data.subCategoryName] || noFilter($scope.filter);
+    };
+    
+    function noFilter(filterObj) {
+        for (var key in filterObj) {
+            if (filterObj[key]) {
+                return false;
+            }
+        }
+        return true;
+    }   
+
+     
 })
 .run(['$rootScope', function($scope) {
   $scope.scenario = 'Sign up';
