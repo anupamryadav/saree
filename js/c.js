@@ -24,7 +24,7 @@ mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
       $scope.loading = false;
       }
       });
-});
+
 
       $scope.getCategories = function () 
       {
