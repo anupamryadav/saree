@@ -11,6 +11,7 @@ mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
 
 //Parse
 
+
       Parse.Cloud.run('hello', {methodname: $routeParams.test}, {
       success: function(result) {      
       $scope.data =  result.data.products;
@@ -28,11 +29,14 @@ mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
       $scope.getCategories = function () 
 
       {
+         setTimeout(function(){     
+        
       return ($scope.data || []).map(function (w) {
       return w.subCategoryName;
       }).filter(function (w, idx, arr) {
       return arr.indexOf(w) === idx;
       });
+       }, 1000);
       };
       $scope.getMoreData = function () 
       {   
