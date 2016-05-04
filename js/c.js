@@ -25,23 +25,17 @@ mainApp.controller('MainCtrl', function($scope, $http,$routeParams) {
       }
       });
 
-
+};
       $scope.getCategories = function () 
-
       {
-
-        if ($scope.data != null) {
-         setTimeout(function(){     
-        
       return ($scope.data || []).map(function (w) {
       return w.subCategoryName;
       }).filter(function (w, idx, arr) {
       return arr.indexOf(w) === idx;
       });
-       }, 1000);
-         };
+       }
 
-      };
+      
       $scope.getMoreData = function () 
       {   
       $scope.totalDisplayed += 3;  
