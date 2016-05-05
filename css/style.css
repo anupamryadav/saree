@@ -586,3 +586,10 @@ background-color :#101010 !important;
     top: 11px;
     left: -6px;
 }
+
+.leftscroll
+{
+	max-height: 200px;
+	overflow: scroll;
+	overflow-x:hidden;
+}
