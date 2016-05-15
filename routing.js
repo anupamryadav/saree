@@ -166,6 +166,12 @@
         resolve: {
             test: function ($route) { $route.current.params.test = 'toys'; }
         }
+         .when('/Womens_Clothing1', {
+        templateUrl: 'fk.html',
+          controller: 'MainCtrlfkg',
+        resolve: {
+            test: function ($route) { $route.current.params.test = 'Womens_Clothing'; }
+        }
         
       })
            
