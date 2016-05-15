@@ -166,11 +166,19 @@
         resolve: {
             test: function ($route) { $route.current.params.test = 'toys'; }
         }
-         .when('/Womens_Clothing1', {
+      })
+              .when('/air_coolers', {
         templateUrl: 'fk.html',
           controller: 'MainCtrlfkg',
         resolve: {
-            test: function ($route) { $route.current.params.test = 'Womens_Clothing'; }
+            test: function ($route) { $route.current.params.test = 'air_coolers'; }
+        }
+      })
+         .when('/Lingerie', {
+        templateUrl: 'fk.html',
+          controller: 'MainCtrlfkg',
+        resolve: {
+            test: function ($route) { $route.current.params.test = 'womens_clothing'; }
         }
         
       })
