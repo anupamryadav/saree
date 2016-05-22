@@ -179,7 +179,7 @@
         templateUrl: 'fk.html',
           controller: 'MainCtrlfkg',
         resolve: {
-            test: function ($route) { $route.current.params.test = 'food_nutrition'; }
+            test: function ($route) { $route.current.params.test = 'air_conditioners'; }
         }
       })
          .when('/Lingerie', {
