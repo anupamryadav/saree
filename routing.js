@@ -167,11 +167,19 @@
             test: function ($route) { $route.current.params.test = 'toys'; }
         }
       })
+          
               .when('/air_coolers', {
         templateUrl: 'fk.html',
           controller: 'MainCtrlfkg',
         resolve: {
             test: function ($route) { $route.current.params.test = 'air_coolers'; }
+        }
+      })
+                  .when('/air_conditioners', {
+        templateUrl: 'fk.html',
+          controller: 'MainCtrlfkg',
+        resolve: {
+            test: function ($route) { $route.current.params.test = 'air_conditioners'; }
         }
       })
          .when('/Lingerie', {
