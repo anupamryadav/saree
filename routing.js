@@ -175,11 +175,11 @@
             test: function ($route) { $route.current.params.test = 'air_coolers'; }
         }
       })
-                  .when('/air_conditioners', {
+                  .when('/food_nutrition', {
         templateUrl: 'fk.html',
           controller: 'MainCtrlfkg',
         resolve: {
-            test: function ($route) { $route.current.params.test = 'air_conditioners'; }
+            test: function ($route) { $route.current.params.test = 'food_nutrition'; }
         }
       })
          .when('/Lingerie', {
