@@ -26,12 +26,26 @@
           <!--   <div class="no-padding">
                     <span class="title">BEST SELLER</span>
                   </div>-->
-               
-                       <div class="hero-feature hidden-sm leftscroll">
+               <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Category</button>
+                       <div class="hero-feature hidden-sm leftscroll" <span  id="demo" class="collapse" >
+                          
                                <div ng-repeat="cat in getCategories()">
-        <input type="checkbox" ng-model="filter[cat]" /> {{cat| uppercase}}
+                                
+        <input type="checkbox" ng-model="filter[cat]" /> {{cat }}
+      </span>
     </div>
                         </div>
+
+                             <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Brand">Brand</button>
+                       <div class="hero-feature hidden-sm leftscroll" <span  id="Brand" class="collapse" >
+                          
+                               <div ng-repeat="brand in getbrand()">
+                                
+        <input type="checkbox" ng-model="filter1[brand]" /> {{brand }}
+      </span>
+    </div>
+                        </div>
+
                         <div class="hero-feature hidden-sm">
                             <div class="thumbnail text-center">
                                    <div class="caption prod-caption">
@@ -78,7 +92,7 @@
 
 
             <div infinite-scroll="getMoreData()" >
-<span ng-repeat="x in filtered=(data | filter:filterByCategory)   | limitTo:totalDisplayed |filter:query" >
+<span ng-repeat="x in filtered=(data | filter:filterByCategory  )   | limitTo:totalDisplayed |filter:query">
   <div class="col-lg-4 col-sm-4 hero-feature text-center">
      <div class="thumbnail">
                                     <a href="{{x.link}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
