@@ -39,7 +39,7 @@ mainApp.controller('MainCtrl', function($scope, $http, $routeParams) {
         $scope.totalDisplayed += 3;
     }
     $scope.filterByCategory = function(data) {
-        return $scope.filter[data.subCategoryName] || noFilter($scope.filter1);
+        return $scope.filter[data.subCategoryName] || noFilter($scope.filter);
     };
 
   $scope.filterBybrand = function(data) {
