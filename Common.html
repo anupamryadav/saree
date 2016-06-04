@@ -92,7 +92,7 @@
 
 
             <div infinite-scroll="getMoreData()" >
-<span ng-repeat="x in filtered=(data | filter:filterByCategory  )   | limitTo:totalDisplayed |filter:query">
+<span ng-repeat="x in filtered=(data | filter:filterBybrand  | filter:filterByCategory )   | limitTo:totalDisplayed |filter:query">
   <div class="col-lg-4 col-sm-4 hero-feature text-center">
      <div class="thumbnail">
                                     <a href="{{x.link}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">

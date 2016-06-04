@@ -4,6 +4,7 @@ mainApp.controller('MainCtrl', function($scope, $http, $routeParams) {
     $scope.totalDisplayed = 6
     $scope.users = [];
     $scope.filter = [];
+    $scope.filter1 = [];
     $scope.data = [];
     var urlval = "";
     Parse.Cloud.run('hello', {
