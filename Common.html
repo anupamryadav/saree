@@ -88,7 +88,7 @@
             <div infinite-scroll="getMoreData()" >
 <span ng-repeat="x in filtered=(data | filter:filterBybrand  | filter:filterByCategory )   | limitTo:totalDisplayed |filter:query | orderBy :offerPrice">
   <div class="col-lg-4 col-sm-4 hero-feature text-center">
-     <div class="thumbnail">
+     <div class="thumbnail item">
                                     <a href="{{x.link}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
                                 <img src="{{x.imageLink}}" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
                             </a>                            
