@@ -599,16 +599,17 @@ footer .copyright {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 30px;
-    background: #384248;
-    color: #fff;
-    height: 23px
+    width: 40px;
+    color: red;
+    height: 30px;
+    background-color: black;
+    border-radius:4.5px;
 }
 
 .back-top:hover,
 .back-top:focus,
 .back-top:active {
-    color: #fff
+    color: red;
 }
 
 .back-top:hover {
