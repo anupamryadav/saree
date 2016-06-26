@@ -7,16 +7,16 @@ var concat = require('gulp-concat');
 
 gulp.task('default',function()
 {
-gulp.src('js/*.js')
+gulp.src('js/myjs/*.js')
  .pipe(uglify())
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('build/js'));
 });
 
 gulp.task('Scripts',function()
 {
-gulp.src('js/*.js')
+gulp.src('js/myjs/*.js')
  .pipe(uglify())
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('build/js'));
 });
  
 gulp.task('css', function () {
@@ -25,7 +25,7 @@ gulp.task('css', function () {
       "maxLineLen": 80,
       "uglyComments": true
     }))
-    .pipe(gulp.dest('./distcss/'));
+    .pipe(gulp.dest('build/styles/'));
 });
 
 gulp.task('Concating', [], function() {
