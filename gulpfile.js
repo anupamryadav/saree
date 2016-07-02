@@ -4,6 +4,9 @@ var uglify = require('gulp-uglify');
 var uglify = require('gulp-uglify');
 var uglifycss = require('gulp-uglifycss');
 var concat = require('gulp-concat');
+var minifyHtml = require("gulp-minify-html");
+var  minifyCss = require("gulp-minify-css");
+
 
 gulp.task('default',function()
 {
@@ -40,4 +43,26 @@ gulp.task('Concatjs', [], function() {
   gulp.src("js/myjs/**.js")
       .pipe(concat('main.js'))
       .pipe(gulp.dest('build/js'));
+});
+
+// task
+gulp.task('minify-html', function () {
+    gulp.src('./**.html') // path to your files
+    .pipe(minifyHtml())
+    .pipe(gulp.dest('build/'));
+});
+
+// task
+gulp.task('minify-css', function () {
+    gulp.src('css/**/*.css') // path to your file
+    .pipe(minifyCss())
+    .pipe(gulp.dest('build/css'));
+});
+
+
+// task
+gulp.task('minify-js', function () {
+    gulp.src('js/**/*.js') // path to your files
+    .pipe(uglify())
+    .pipe(gulp.dest('build/js'));
 });
