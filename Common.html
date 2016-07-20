@@ -22,9 +22,22 @@
     </span>    
           </div>
 
+<div class="col-lg-12 col-md-12 col-sm-6">
+        <div class="span5">
+        <h4>Default slider</h4>
+
+        <div range-slider min="0" max="1000" model-min="demo1.min" model-max="demo1.max" ng-model="query" ></div>
+
+   
+        
+      </div>
+</div>
+        
           <div class="col-lg-12 col-md-12 col-sm-6">
           <!--   <div class="no-padding">
                     <span class="title">BEST SELLER</span>
+
+
                   </div>-->
                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Category</button>
                        <div class="hero-feature hidden-sm leftscroll" <span  id="demo" class="collapse" >
@@ -73,6 +86,8 @@
 
   <input ng-model="query" type="text"
         placeholder="Search for a product, category or brand..." autofocus class="form-control input-lg"/>
+
+
 </div>
 
     </form>
@@ -89,19 +104,19 @@
 <span ng-repeat="x in filtered=(data | filter:filterBybrand  | filter:filterByCategory )   | limitTo:totalDisplayed |filter:query | orderBy :offerPrice">
   <div class="col-lg-4 col-sm-4 hero-feature text-center">
      <div class="thumbnail item">
-                                    <a href="{{x.link}}" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
-                                <img src="{{x.imageLink}}" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
+                                    <a  href="" ng-click="viewProduct(x);" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
+                                <img src="{{x.imageLink}}"  alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
                             </a>                            
                             <div class="caption prod-caption">
                                 <h4>
-                                <a class="link-p" style="overflow: hidden; position: relative;" href='{{x.link}}' target=_blank>{{x.title}}</a></h4>
+                                <a class="link-p" style="overflow: hidden; position: relative;"  >{{x.title}}</a></h4>
                                 <p></p>
                                 <p>
                                     </p><div class="btn-group">
                                      
                                         <span class="btn strikethrough">Rs {{x.mrp}}</span>
                                            <a href="#" class="btn btn-default">Rs {{x.offerPrice}}</a>
-                                        <a href="{{x.link}}" target="_blank" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+                                        <a ng-click="viewProduct(x);"target="_blank" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
                                     </div>
                                 <p></p>
                             </div>

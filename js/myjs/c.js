@@ -1,12 +1,100 @@
-mainApp.controller('MainCtrl', function($scope, $http, $routeParams) {
+mainApp.controller('MainCtrl', function($scope, $http, $routeParams,$uibModal) {
     $scope.loading = true;
     var paramValue = $routeParams.test;;
     $scope.totalDisplayed = 6
     $scope.users = [];
     $scope.filter = [];
     $scope.filter1 = [];
+       $scope.filter2 = [];
+
     $scope.data = [];
     var urlval = "";
+
+
+        $scope.demo1 = {
+                    min: 20,
+                    max: 80
+                };
+
+
+
+    $scope.cart = [];
+$scope.addToCart = function (x) {
+            var found = false;
+            $scope.cart.forEach(function (item) {
+                if (item.id === x.id) {
+                    item.quantity++;
+                    found = true;
+                }
+            });
+            if (!found) {
+                $scope.cart.push(angular.extend({quantity: 1}, x));
+               
+            }
+        };
+
+        $scope.viewProduct = function (x) {
+
+              var found = false;
+            $scope.cart.forEach(function (item) {
+                if (item.id === x.id) {
+                    item.quantity++;
+                    found = true;
+                }
+            });
+            if (!found) {
+                $scope.cart=[];
+                $scope.cart.push(angular.extend({quantity: 1}, x));
+               
+            }
+
+
+          $uibModal.open({
+                templateUrl: 'checkout.html',
+                controller: 'CheckoutCtrl',
+                size: 'lg',
+                resolve: {
+                    totalAmount: $scope.getCartPrice,
+                    getImage: $scope.getImage
+                    
+                }
+            });
+        };
+
+        $scope.getCartPrice = function () {
+            var total = 0;
+            $scope.cart.forEach(function (x) {
+                total += x.mrp * x.quantity;
+            });
+            return total;
+        };
+
+
+ $scope.getImage = function () {
+            var Image =[];
+            $scope.cart.forEach(function (x) {
+                Image.push(x);
+            });
+            return Image;
+        };
+
+
+        $scope.checkout = function () {
+            $uibModal.open({
+                templateUrl: 'checkout.html',
+                controller: 'CheckoutCtrl',
+                size: 'lg',
+                resolve: {
+                    totalAmount: $scope.getCartPrice,
+                    getImage: $scope.getImage
+                    
+                }
+            });
+        };
+
+
+
+
     Parse.Cloud.run('hello', {
         methodname: $routeParams.test
     }, {
@@ -34,6 +122,14 @@ mainApp.controller('MainCtrl', function($scope, $http, $routeParams) {
             return arr.indexOf(w) === idx;
         });
     };
+
+      $scope.getmrp = function() {
+        return ($scope.data || []).map(function(w) {
+            return w.mrp;
+        }).filter(function(w, idx, arr) {
+            return arr.indexOf(w) === idx;
+        });
+    };
     
 
     $scope.getMoreData = function() {
@@ -46,6 +142,12 @@ mainApp.controller('MainCtrl', function($scope, $http, $routeParams) {
   $scope.filterBybrand = function(data) {
         return $scope.filter1[data.brand] || noFilter($scope.filter1);
     };
+
+  $scope.getmrp = function(data) {
+        return $scope.filter2[data.mrp] || noFilter($scope.filter2);
+    };
+
+
 
 
     function noFilter(filterObj) {
