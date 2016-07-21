@@ -9,7 +9,9 @@ mainApp.controller('CheckoutCtrl', function ($scope, totalAmount,getImage) {
 
 
     $scope.cart = [];
+      $scope.detailProduct = [];
 $scope.addToCart = function (x) {
+
             var found = false;
             $scope.cart.forEach(function (item) {
                 if (item.id === x.id) {
@@ -26,19 +28,17 @@ $scope.addToCart = function (x) {
 
         $scope.getCartPrice = function () {
             var total = 0;
-            $scope.cart.forEach(function (x) {
-                total += x.mrp * x.quantity;
+            $scope.cart.forEach(function (x) {            		
+                total += x.effectivePrice * x.quantity;
             });
             return total;
         };
 		 
 
 
+		$scope.detailProduct = getImage;
 
-		 	$scope.cart = getImage;
-
-		console.log($scope.cart);
-
+	
 		$scope.onSubmit = function () {
 			$scope.processing = true;
 		};
