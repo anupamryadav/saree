@@ -34,7 +34,10 @@ $scope.addToCart = function (x) {
             return total;
         };
 		 
-
+$scope.remove = function(item) { 
+  var index = $scope.cart.indexOf(item);
+  $scope.cart.splice(index, 1);     
+}
 
 		$scope.detailProduct = getImage;
 
