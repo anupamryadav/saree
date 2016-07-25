@@ -3,6 +3,7 @@ mainApp.controller('CheckoutCtrl', function ($scope, totalAmount,getImage,$uibMo
 	
 
 	        $scope.counter = 0;
+            $scope.count =1;
         $scope.checkout = function() {
           $uibModal.open({
                 templateUrl: 'cart.html',
