@@ -1,21 +1,45 @@
-mainApp.controller('CheckoutCtrl', function ($scope, totalAmount,getImage) {
+mainApp.controller('CheckoutCtrl', function ($scope, totalAmount,getImage,$uibModal) {
 		$scope.totalAmount = totalAmount;
 	
 
 	        $scope.counter = 0;
-        $scope.Cart = function() {
-           alert("hello");
+        $scope.checkout = function() {
+          $uibModal.open({
+                templateUrl: 'cart.html',
+                 controller: 'cart',
+                size: 'lg'
+              
+            });
         };
 
 
     $scope.cart = [];
       $scope.detailProduct = [];
+
+$scope.removeToCart = function (x) 
+{
+  $scope.count--;
+
+       $scope.cart.forEach(function (item) {
+                if (item.id === x.id) {
+                    item.quantity--;
+                    $scope.count =item.quantity;
+                    found = true;
+                }
+            });
+
+}
+
+
 $scope.addToCart = function (x) {
 
+
+console.log($scope.cart);
             var found = false;
             $scope.cart.forEach(function (item) {
                 if (item.id === x.id) {
                     item.quantity++;
+                    $scope.count =item.quantity;
                     found = true;
                 }
             });
