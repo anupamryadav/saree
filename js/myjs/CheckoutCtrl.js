@@ -31,8 +31,19 @@ $scope.removeToCart = function (x)
 
 }
 
+$scope.checkout = function () {
+
+     $uibModal.open({
+                templateUrl: 'cart.html',
+                
+                size: 'lg',
+                
+            });
+
+}
 
 $scope.addToCart = function (x) {
+
 
 
 console.log($scope.cart);
