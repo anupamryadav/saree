@@ -42,6 +42,12 @@ $scope.checkout = function () {
 
 }
 
+$scope.ContinueShopping = function () 
+{
+    
+}
+
+
 $scope.addToCart = function (x) {
 
 
