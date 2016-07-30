@@ -26,6 +26,7 @@
         <div class="span5">
    
  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Price</button>
+        <div range-slider min="0" max="100" model-min="demo1.min" model-max="demo1.max" ng-model="query" ></div>
 
    
         
@@ -100,6 +101,7 @@
 
 
             <div infinite-scroll="getMoreData()" >
+<span ng-repeat="x in filtered=(data | filter:filterBybrand  | filter:filterByCategory )   | limitTo:totalDisplayed |filter:query | orderBy :offerPrice">
   <div class="col-lg-4 col-sm-4 hero-feature text-center">
      <div class="thumbnail item">
                                     <a  href="" ng-click="viewProduct(x);" target="_blank" class="link-p" style="overflow: hidden; position: relative;">
