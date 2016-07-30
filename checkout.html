@@ -1,13 +1,13 @@
 
 
-<div ng-if="cart.length" class="shopping-cart" style="background-color: rgb(255, 255, 255);">
+<div ng-if="cart.length" class="shopping-cart col-lg-12 col-md-12 col-sm-12" style="background-color: rgb(255, 255, 255);">
 
 <div class="col-lg-12 col-md-12 col-sm-12" style="background-color: rgb(255, 255, 255);">
-            		<div class="col-lg-12 col-sm-12">
+            		<div class="col-lg-12 col-md-12  col-sm-12">
                 		<span class="title">SHOPPING CART</span>
                 	</div>
-    	            <div class="col-lg-12 col-sm-12 hero-feature">
-    					<table class="table table-bordered tbl-cart">
+    	            <div class="col-lg-12 col-md-12 col-sm-12 hero-feature">
+    					<table class="col-lg-12 col-md-12 col-sm-12 table table-bordered tbl-cart">
     						<thead>
                                 <tr>
                                     <td class="hidden-xs">Image</td>
@@ -85,7 +85,7 @@
 								<div class="product-main-image-container">
 								<img src="images/loader.gif" alt="" class="product-loader" style="display: none;">
 									
-								<a href="{{product.link}}" target="_blank">		<img src="{{product.imageLink}}" class="zoomImg" style="top: -3.25888324873096px; left: -4.9492385786802px; opacity: 1; border: none; max-width: none; max-height: none; width: 400px; height: 400px;"></a>
+								<a href="{{product.link}}" target="_blank">		<img src="{{product.imageLink}}" class="zoomImg" style="top: -3.25888324873096px; left: -4.9492385786802px; opacity: 1; border: none; max-width: none; max-height: none; width: 100%;"></a>
 								
 								</div>
 								<!-- End Main Image -->
@@ -176,7 +176,7 @@
 
 							<div class="clearfix"></div><br clear="all">
 
-							<div class="col-xs-12 product-detail-tab">
+							<div class="col-lg-12 col-md-12 col-sm-12 product-detail-tab">
 								<!-- Nav tabs -->
 								<ul class="nav nav-tabs">
 									<li class="active"><a  data-toggle="tab">Description</a></li>
