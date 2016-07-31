@@ -83,7 +83,7 @@ footer .copyright{padding:10px;color:#ccc;background:#263238}.navbar{background:
 .navbar .sub-menu:before{border-bottom:7px solid transparent;border-left:0;border-right:7px solid rgba(0,0,0,0.2);border-top:7px solid transparent;left:-7px;top:10px}
 .navbar .sub-menu:after{border-top:6px solid transparent;border-left:0;border-right:6px solid #fff;border-bottom:6px solid transparent;left:10px;top:11px;left:-6px}
 .leftscroll{max-height:200px;overflow:scroll;overflow-x:hidden;border-color:#ddd;box-shadow:0 1px 5px rgba(0,0,0,.1);margin-bottom:20px;background-color:#fff;border:1px solid transparent;border-radius:4px;font-size:13px}
-.btn-info{width:220px;font-weight:bold}
+
 .form-inline .form-control
 {
 	width: 50% !important;
