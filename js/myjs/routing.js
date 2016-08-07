@@ -185,7 +185,31 @@ mainApp.config(['$routeProvider', function($routeProvider) {
                 $route.current.params.test = 'toys';
             }
         }
-    }).otherwise({
+    })
+         .when('/air_coolers', {
+        templateUrl: 'fk.html',
+          controller: 'MainCtrlfkg',
+        resolve: {
+            test: function ($route) { $route.current.params.test = 'air_coolers'; }
+        }
+      })
+                  .when('/food_nutrition', {
+        templateUrl: 'fk.html',
+          controller: 'MainCtrlfkg',
+        resolve: {
+            test: function ($route) { $route.current.params.test = 'air_conditioners'; }
+        }
+      })
+         .when('/Lingerie', {
+        templateUrl: 'fk.html',
+          controller: 'MainCtrlfkg',
+        resolve: {
+            test: function ($route) { $route.current.params.test = 'womens_clothing'; }
+        }
+        
+      })
+
+    .otherwise({
         redirectTo: '/'
     });
 }]);
