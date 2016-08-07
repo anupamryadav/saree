@@ -91,3 +91,7 @@ footer .copyright{padding:10px;color:#ccc;background:#263238}.navbar{background:
 body{
 	background-color: #f0f0f0 !important;
 }
+.leftbtn
+{
+	width: 100%;
+}
