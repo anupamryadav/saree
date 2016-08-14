@@ -1,0 +1,56 @@
+    <html ng-app="myApp">  
+        <head lang="en">
+            <meta charset="utf-8">
+            <title>Getting Started With ngGrid Example</title>  
+            <link rel="stylesheet" type="text/css" href="node_modules/ng-grid/ng-grid.css" />
+            <link rel="stylesheet" type="text/css" href="style.css" />
+           <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+             <script type="text/javascript" src="js/angular.min.js"></script>
+            <script type="text/javascript" src="node_modules/ng-grid/ng-grid-2.0.1.min.js"></script>
+            <script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/parse/1.6.7/parse.min.js"></script>    
+            <style type="text/css">
+    /*style.css*/
+    .gridStyle {
+        border: 1px solid rgb(212,212,212);
+        width:  100%; 
+        height: 100%
+    }
+
+            </style>
+            <script type="text/javascript">
+Parse.initialize("BtUb3tIMS0QgBhhuUlC5dcoU6bbDjHJBnIrx2sJr", "BeIw56xBQw4ENNnrEFyqbMMkOselNeOEOVcSz5i6");
+var app = angular.module('myApp', ['ngGrid']);
+
+
+
+
+app.controller('MyCtrl', function($scope) {
+
+var url ="Womens_Ethnic_Wear";
+  Parse.Cloud.run('hellofk', {
+        methodname: url
+    }, {
+        success: function(result) {
+            setTimeout(function() {
+                if (result.data.dotdList != null) {
+                    $scope.myData = result.data.dotdList;
+                    $scope.$apply();
+                };
+            }, 500);
+            $scope.loading = false;
+        },
+        error: function(error) {
+            console.log("Oops! Couldn't POST from Cloud Code successfully..  :" + error)
+            $scope.loading = false;
+        }
+    });
+    $scope.gridOptions = { data: 'myData' };
+});
+            </script>
+        </head>
+        <body ng-controller="MyCtrl">
+            <div class="gridStyle" ng-grid="gridOptions">
+            </div>
+        </body>
+    </html>
