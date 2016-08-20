@@ -6,7 +6,7 @@ var uglifycss = require('gulp-uglifycss');
 var concat = require('gulp-concat');
 var minifyHtml = require("gulp-minify-html");
 var  minifyCss = require("gulp-minify-css");
-
+var sass = require('gulp-sass');
 
 gulp.task('default',function()
 {
@@ -66,3 +66,14 @@ gulp.task('minify-js', function () {
     .pipe(uglify())
     .pipe(gulp.dest('build/js'));
 });
+
+gulp.task('sass', function () {
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('build/css'));
+});
+
+gulp.task('sass:watch', function () {
+  gulp.watch('./sass/**/*.scss', ['sass']);
+});
+
