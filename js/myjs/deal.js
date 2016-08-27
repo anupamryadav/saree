@@ -12,7 +12,7 @@ mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams,toaster)
      toaster.pop({
                 type: 'info',        
                 body: 'Please Wait ...',
-                timeout: 5000
+                timeout: 7000
 
             });
 

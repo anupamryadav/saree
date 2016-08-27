@@ -940,7 +940,7 @@ mainApp.controller('MainCtrl', function($scope, $http, $routeParams,$uibModal,to
      toaster.pop({
                 type: 'info',        
                 body: 'Please Wait ...',
-                timeout: 5000              
+                timeout: 8000              
             });
 
         $scope.demo1 = {
@@ -1249,7 +1249,7 @@ mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams,toaster)
      toaster.pop({
                 type: 'info',        
                 body: 'Please Wait ...',
-                timeout: 5000
+                timeout: 7000
 
             });
 
