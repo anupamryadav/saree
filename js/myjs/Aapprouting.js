@@ -1,5 +1,5 @@
 Parse.initialize("BtUb3tIMS0QgBhhuUlC5dcoU6bbDjHJBnIrx2sJr", "BeIw56xBQw4ENNnrEFyqbMMkOselNeOEOVcSz5i6");
-var mainApp = angular.module("mainApp", ['ngRoute', 'infinite-scroll','ui.bootstrap','ui-rangeSlider']);
+var mainApp = angular.module("mainApp", ['ngRoute', 'infinite-scroll','ui.bootstrap','ui-rangeSlider', 'toaster']);
 mainApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: 'deal.html',

@@ -1,4 +1,4 @@
-mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams) {
+mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams,toaster) {
     $scope.loading = true;
     var paramValue = $routeParams.test;
     $scope.totalDisplayed = 6
@@ -8,6 +8,14 @@ mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams) {
     $scope.productBaseInfo = [];
     $scope.filter = {};
     var url = paramValue;
+
+     toaster.pop({
+                type: 'info',        
+                body: 'Please Wait ...',
+                timeout: 5000
+
+            });
+
     Parse.Cloud.run('hellofk', {
         methodname: url
     }, {

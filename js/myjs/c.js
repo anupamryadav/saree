@@ -1,4 +1,4 @@
-mainApp.controller('MainCtrl', function($scope, $http, $routeParams,$uibModal) {
+mainApp.controller('MainCtrl', function($scope, $http, $routeParams,$uibModal,toaster) {
     $scope.loading = true;
     var paramValue = $routeParams.test;;
     $scope.totalDisplayed = 6
@@ -10,6 +10,12 @@ mainApp.controller('MainCtrl', function($scope, $http, $routeParams,$uibModal) {
     $scope.data = [];
     var urlval = "";
 
+
+     toaster.pop({
+                type: 'info',        
+                body: 'Please Wait ...',
+                timeout: 5000              
+            });
 
         $scope.demo1 = {
                     min: 20,

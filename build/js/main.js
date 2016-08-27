@@ -1,5 +1,5 @@
 Parse.initialize("BtUb3tIMS0QgBhhuUlC5dcoU6bbDjHJBnIrx2sJr", "BeIw56xBQw4ENNnrEFyqbMMkOselNeOEOVcSz5i6");
-var mainApp = angular.module("mainApp", ['ngRoute', 'infinite-scroll','ui.bootstrap','ui-rangeSlider']);
+var mainApp = angular.module("mainApp", ['ngRoute', 'infinite-scroll','ui.bootstrap','ui-rangeSlider', 'toaster']);
 mainApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: 'deal.html',
@@ -924,7 +924,7 @@ mainApp.config(['$routeProvider', function($routeProvider) {
     })();
 }());
 
-mainApp.controller('MainCtrl', function($scope, $http, $routeParams,$uibModal) {
+mainApp.controller('MainCtrl', function($scope, $http, $routeParams,$uibModal,toaster) {
     $scope.loading = true;
     var paramValue = $routeParams.test;;
     $scope.totalDisplayed = 6
@@ -936,6 +936,12 @@ mainApp.controller('MainCtrl', function($scope, $http, $routeParams,$uibModal) {
     $scope.data = [];
     var urlval = "";
 
+
+     toaster.pop({
+                type: 'info',        
+                body: 'Please Wait ...',
+                timeout: 5000              
+            });
 
         $scope.demo1 = {
                     min: 20,
@@ -1229,7 +1235,7 @@ $scope.remove = function(item) {
 		};
 	});
 
-mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams) {
+mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams,toaster) {
     $scope.loading = true;
     var paramValue = $routeParams.test;
     $scope.totalDisplayed = 6
@@ -1239,6 +1245,14 @@ mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams) {
     $scope.productBaseInfo = [];
     $scope.filter = {};
     var url = paramValue;
+
+     toaster.pop({
+                type: 'info',        
+                body: 'Please Wait ...',
+                timeout: 5000
+
+            });
+
     Parse.Cloud.run('hellofk', {
         methodname: url
     }, {
