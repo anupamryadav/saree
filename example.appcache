@@ -19,3 +19,6 @@ CACHE:
 /deal.html
 http://www.google-analytics.com/analytics.js
 /favicon.ico 
+https://cdn.jsdelivr.net/parse/1.6.7/parse.min.js
+http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
+https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.1.0/toaster.min.js
