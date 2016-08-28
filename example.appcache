@@ -5,6 +5,8 @@ CACHE:
 /css/style.css
 /css/zoom.css
 /fonts/OpenSans-CondLight-webfont.woff 
+/fonts/sourcesanspro-regular-webfont.woff
+/fonts/sourcesanspro-regular-webfont.ttf
 /images/logo.png
 /js/angular-route.min.js
 /js/angular.min.js
@@ -21,3 +23,7 @@ http://www.google-analytics.com/analytics.js
 /favicon.ico 
 https://cdn.jsdelivr.net/parse/1.6.7/parse.min.js
 http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
+https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/2.0.0/toaster.min.js
+https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css
+https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.1.0/toaster.min.css
+https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js 
