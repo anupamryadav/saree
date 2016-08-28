@@ -1,9 +1,9 @@
 CACHE MANIFEST
 /build/js/main.js
-/jquery.faloading.min.css 
-/style.css
-/zoom.css
-/fonts/OpenSans-CondLight-webfont.woff 
+/css/jquery.faloading.min.css 
+/css/style.css
+/css/zoom.css
+/fonts/fonts/OpenSans-CondLight-webfont.woff 
 /images/logo.png
 /js/angular-route.min.js
 /js/angular.min.js
