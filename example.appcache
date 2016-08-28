@@ -3,11 +3,11 @@ CACHE MANIFEST
 /css/jquery.faloading.min.css 
 /css/style.css
 /css/zoom.css
-/fonts/fonts/OpenSans-CondLight-webfont.woff 
+/fonts/OpenSans-CondLight-webfont.woff 
 /images/logo.png
 /js/angular-route.min.js
 /js/angular.min.js
-/js/bootstrap.js (10 minutes)
+/js/bootstrap.js
 /js/jquery.faloading-0.2.min.js
 /myjs/angular.rangeSlider.css
 /js/ng-infinite-scroll.min.js
