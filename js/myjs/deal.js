@@ -12,7 +12,7 @@ mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams,toaster)
      toaster.pop({
                 type: 'info',        
                 body: 'Please Wait ...',
-                timeout: 7000
+                timeout: 9000
 
             });
 
@@ -28,8 +28,13 @@ mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams,toaster)
             }, 500);
             $scope.loading = false;
         },
-        error: function(error) {
-            console.log("Oops! Couldn't POST from Cloud Code successfully..  :" + error)
+        error: function(error) {            
+               toaster.pop({
+                type: 'error',        
+                body: 'Oops!',
+                timeout: 4000
+
+            });
             $scope.loading = false;
         }
     });

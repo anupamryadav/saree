@@ -14,7 +14,7 @@ mainApp.controller('MainCtrl', function($scope, $http, $routeParams,$uibModal,to
      toaster.pop({
                 type: 'info',        
                 body: 'Please Wait ...',
-                timeout: 8000              
+                timeout: 9000              
             });
 
         $scope.demo1 = {
@@ -110,7 +110,12 @@ $scope.addToCart = function (x) {
             $scope.$apply();
         },
         error: function(error) {
-            console.log("Oops! Couldn't POST from Cloud Code successfully..  :" + error)
+                     toaster.pop({
+                type: 'error',        
+                body: 'Oops!',
+                timeout: 4000
+
+            });
             $scope.loading = false;
         }
     });

@@ -62,7 +62,7 @@ gulp.task('minify-css', function () {
 
 // task
 gulp.task('minify-js', function () {
-    gulp.src('js/**/*.js') // path to your files
+    gulp.src('build/js/**/*.js') // path to your files
     .pipe(uglify())
     .pipe(gulp.dest('build/js'));
 });
