@@ -213,7 +213,7 @@ mainApp.config(['$routeProvider', function($routeProvider) {
         redirectTo: '/'
     });
 }]);
-mainApp.directive('loading', function() {
+/*mainApp.directive('loading', function() {
     return {
         restrict: 'E',
         replace: true,
@@ -226,4 +226,4 @@ mainApp.directive('loading', function() {
             });
         }
     }
-})
+*/
