@@ -16,7 +16,12 @@ var method=request.params.methodname;
        success: function (httpResponse) {
 
      switch(method) {
-      case "Eyewear" :{
+
+case "deal" :{
+urlval= "http://affiliate-feeds.snapdeal.com/feed/api/dod/offer";
+     
+ break;}
+            case "Eyewear" :{
 urlval= httpResponse.data.apiGroups.Affiliate.listingsAvailable.Eyewear.listingVersions.v1.get;
      
  break;}
@@ -307,8 +312,7 @@ urlval =value["v1.1.0"].get;
 
        success: function (httpResponse) {
                 console.log(httpResponse);
-                response.success(httpResponse);
-       },
+                response.success(httpResponse);       },
        error:function (httpResponse) {
                 console.error('Request failed with response code ' + httpResponse);
                 response.error(httpResponse.status);
