@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "newnode"
+    },
+    "newnode": {
+      "applicationId": "BtUb3tIMS0QgBhhuUlC5dcoU6bbDjHJBnIrx2sJr"
+    }
+  }
+}
