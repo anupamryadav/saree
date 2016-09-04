@@ -16,6 +16,11 @@ var method=request.params.methodname;
        success: function (httpResponse) {
 
      switch(method) {
+      
+case "deal" :{
+urlval= "http://affiliate-feeds.snapdeal.com/feed/api/dod/offer";
+     
+ break;}
       case "Eyewear" :{
 urlval= httpResponse.data.apiGroups.Affiliate.listingsAvailable.Eyewear.listingVersions.v1.get;
      
