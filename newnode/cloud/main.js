@@ -221,6 +221,61 @@ urlval= "https://affiliate-api.flipkart.net/affiliate/offers/v1/dotd/json";
 });
 
 
+Parse.Cloud.define("hellofkAll", function(request, response) {
+
+var urlval="";
+var method=request.params.methodname;
+
+  Parse.Cloud.httpRequest({
+        method: "GET",
+       
+
+       //adds a new class to my parse data
+       url: "http://affiliate-feeds.snapdeal.com/feed/70203.json",
+
+       success: function (httpResponse) {
+
+
+urlval= "https://affiliate-api.flipkart.net/affiliate/offers/v1/all/json";
+
+    
+
+
+  //runs when Parse.Cloud.run("POSTfromCloud") on the client side is called
+   Parse.Cloud.httpRequest({
+        method: "GET",
+        headers: {
+          "Fk-Affiliate-Id": "anupamrya",
+          "Fk-Affiliate-Token": "04afdf5da83744948783677b9549d181",
+          "Content-Type": "application/json"
+       },
+
+       //adds a new class to my parse data
+       url: urlval,
+
+       success: function (httpResponse) {
+                console.log(httpResponse);
+                response.success(httpResponse);
+       },
+       error:function (httpResponse) {
+                console.error('Request failed with response code ' + httpResponse);
+                response.error(httpResponse.status);
+       }
+
+    });  //end of Parse.Cloud.httpRequest()
+
+  },
+       error:function (httpResponse) {
+                console.error('Request failed with response code ' + httpResponse);
+                response.error(httpResponse.status);
+       }
+
+    });  //end of Parse.Cloud.httpRequest()
+
+ 
+});
+
+
 // Use Parse.Cloud.define to define as many cloud functions as you want.
 // For example:
 
