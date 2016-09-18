@@ -35,7 +35,7 @@ $scope.checkout = function () {
 
      $uibModal.open({
                 templateUrl: 'cart.html',
-                
+                controller: 'cart',
                 size: 'lg',
                 
             });

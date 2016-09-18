@@ -1142,9 +1142,12 @@ $scope.addToCart = function (x) {
         $scope.currentUser = null;
     };
 }]);
-mainApp.controller('cart', function ($scope) {
+mainApp.controller('cart', function ($scope,$uibModalInstance) {
 	//$scope.cartdetails = cartdetails;
-
+ $scope.cancel = function() {
+    $uibModalInstance.dismiss('cancel');
+  };
+  
 
 });
 mainApp.controller('CheckoutCtrl', function ($scope, totalAmount,getImage,$uibModal,$uibModalInstance) {
@@ -1184,7 +1187,7 @@ $scope.checkout = function () {
 
      $uibModal.open({
                 templateUrl: 'cart.html',
-                
+                controller: 'cart',
                 size: 'lg',
                 
             });
