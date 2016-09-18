@@ -1,4 +1,4 @@
-mainApp.controller('CheckoutCtrl', function ($scope, totalAmount,getImage,$uibModal) {
+mainApp.controller('CheckoutCtrl', function ($scope, totalAmount,getImage,$uibModal,$uibModalInstance) {
 		$scope.totalAmount = totalAmount;
 	
 
@@ -83,6 +83,11 @@ $scope.remove = function(item) {
 
 		$scope.detailProduct = getImage;
 
+
+ $scope.cancel = function() {
+    $uibModalInstance.dismiss('cancel');
+  };
+  
 	
 		$scope.onSubmit = function () {
 			$scope.processing = true;
@@ -103,3 +108,4 @@ $scope.remove = function(item) {
 			$scope.stripeToken = null;
 		};
 	});
+

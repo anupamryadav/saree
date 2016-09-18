@@ -213,7 +213,20 @@ mainApp.config(['$routeProvider', function($routeProvider) {
         redirectTo: '/'
     });
 }]);
-
+/*mainApp.directive('loading', function() {
+    return {
+        restrict: 'E',
+        replace: true,
+        template: '<div class="loading"><img src="images/loading.gif" width="100" height="80" /></div>',
+        link: function(scope, element, attr) {
+            scope.$watch('loading', function(val) {
+                if (val) $(element).show();
+                else
+                    $(element).hide();
+            });
+        }
+    }
+*/
 /*
  *  Angular RangeSlider Directive
  * 
@@ -1130,15 +1143,15 @@ $scope.addToCart = function (x) {
     };
 }]);
 mainApp.controller('cart', function ($scope) {
-    //$scope.cartdetails = cartdetails;
+	//$scope.cartdetails = cartdetails;
 
 
 });
-mainApp.controller('CheckoutCtrl', function ($scope, totalAmount,getImage,$uibModal) {
-        $scope.totalAmount = totalAmount;
-    
+mainApp.controller('CheckoutCtrl', function ($scope, totalAmount,getImage,$uibModal,$uibModalInstance) {
+		$scope.totalAmount = totalAmount;
+	
 
-            $scope.counter = 0;
+	        $scope.counter = 0;
             $scope.count =1;
         $scope.checkout = function() {
           $uibModal.open({
@@ -1206,39 +1219,45 @@ console.log($scope.cart);
 
         $scope.getCartPrice = function () {
             var total = 0;
-            $scope.cart.forEach(function (x) {                  
+            $scope.cart.forEach(function (x) {            		
                 total += x.effectivePrice * x.quantity;
             });
             return total;
         };
-         
+		 
 $scope.remove = function(item) { 
   var index = $scope.cart.indexOf(item);
   $scope.cart.splice(index, 1);     
 }
 
-        $scope.detailProduct = getImage;
+		$scope.detailProduct = getImage;
 
-    
-        $scope.onSubmit = function () {
-            $scope.processing = true;
-        };
 
-        $scope.stripeCallback = function (code, result) {
-            $scope.processing = false;
-            $scope.hideAlerts();
-            if (result.error) {
-                $scope.stripeError = result.error.message;
-            } else {
-                $scope.stripeToken = result.id;
-            }
-        };
+ $scope.cancel = function() {
+    $uibModalInstance.dismiss('cancel');
+  };
+  
+	
+		$scope.onSubmit = function () {
+			$scope.processing = true;
+		};
 
-        $scope.hideAlerts = function () {
-            $scope.stripeError = null;
-            $scope.stripeToken = null;
-        };
-    });
+		$scope.stripeCallback = function (code, result) {
+			$scope.processing = false;
+			$scope.hideAlerts();
+			if (result.error) {
+				$scope.stripeError = result.error.message;
+			} else {
+				$scope.stripeToken = result.id;
+			}
+		};
+
+		$scope.hideAlerts = function () {
+			$scope.stripeError = null;
+			$scope.stripeToken = null;
+		};
+	});
+
 
 mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams,toaster) {
     $scope.loading = true;
@@ -1337,28 +1356,28 @@ mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams,toaster)
     };
 }]);
 mainApp.controller('DetailCtrl', function ($scope, totalAmount,getImage) {
-        $scope.totalAmount = totalAmount;
-        $scope.getImage = getImage;
+		$scope.totalAmount = totalAmount;
+		$scope.getImage = getImage;
 
-        $scope.onSubmit = function () {
-            $scope.processing = true;
-        };
+		$scope.onSubmit = function () {
+			$scope.processing = true;
+		};
 
-        $scope.stripeCallback = function (code, result) {
-            $scope.processing = false;
-            $scope.hideAlerts();
-            if (result.error) {
-                $scope.stripeError = result.error.message;
-            } else {
-                $scope.stripeToken = result.id;
-            }
-        };
+		$scope.stripeCallback = function (code, result) {
+			$scope.processing = false;
+			$scope.hideAlerts();
+			if (result.error) {
+				$scope.stripeError = result.error.message;
+			} else {
+				$scope.stripeToken = result.id;
+			}
+		};
 
-        $scope.hideAlerts = function () {
-            $scope.stripeError = null;
-            $scope.stripeToken = null;
-        };
-    });
+		$scope.hideAlerts = function () {
+			$scope.stripeError = null;
+			$scope.stripeToken = null;
+		};
+	});
 
 mainApp.controller('MainCtrlfk',function($scope,$http,$routeParams){$scope.loading=true;var paramValue=$routeParams.test;$scope.totalDisplayed=6
 $scope.users=[];var urlval="";$scope.data=[];$scope.productBaseInfo=[];$scope.filter={};var url=paramValue;Parse.Cloud.run('hellofk',{methodname:url},{success:function(result){setTimeout(function(){if(result.data.productInfoList!=null){for(var i=result.data.productInfoList.length-1;i>=0;i--){$scope.productBaseInfo.push(result.data.productInfoList[i].productBaseInfo);};};if($scope.productBaseInfo!=null){for(var i=$scope.productBaseInfo.length-1;i>=0;i--){$scope.data.push($scope.productBaseInfo[i].productAttributes);};$scope.$apply();console.log($scope.data);$scope.loading=false;};},1000);$scope.loading=false;},error:function(error){console.log("Oops! Couldn't POST from Cloud Code successfully..  :"+error)
