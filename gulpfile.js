@@ -33,7 +33,7 @@ gulp.task('css', function () {
 
 gulp.task('Concating', [], function() {
   console.log("Concating and moving all the css files in styles folder");
-  gulp.src("css/**.css")
+  gulp.src("css/Mycss/**.css")
       .pipe(concat('main.css'))
       .pipe(gulp.dest('build/styles'));
 });
