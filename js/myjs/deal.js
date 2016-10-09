@@ -31,7 +31,7 @@ mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams,toaster)
         error: function(error) {            
                toaster.pop({
                 type: 'error',        
-                body: 'Oops!',
+                body: 'Unable to connect service, Please Reload page!',
                 timeout: 4000
 
             });
