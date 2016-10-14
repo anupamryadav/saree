@@ -1,3 +1,4 @@
+'use strict';
 mainApp.controller('CheckoutCtrl', function ($scope, totalAmount,getImage,$uibModal,$uibModalInstance) {
 		$scope.totalAmount = totalAmount;
 	

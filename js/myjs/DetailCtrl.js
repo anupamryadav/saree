@@ -1,3 +1,4 @@
+'use strict';
 mainApp.controller('DetailCtrl', function ($scope, totalAmount,getImage) {
 		$scope.totalAmount = totalAmount;
 		$scope.getImage = getImage;

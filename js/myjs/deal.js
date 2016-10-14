@@ -1,3 +1,4 @@
+'use strict';
 mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams,toaster) {
     $scope.loading = true;
     var paramValue = $routeParams.test;

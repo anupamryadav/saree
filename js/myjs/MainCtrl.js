@@ -1,3 +1,4 @@
+'use strict';
 mainApp.controller('MainCtrl', function($scope, $http, $routeParams,$uibModal,toaster) {
     $scope.loading = true;
     var paramValue = $routeParams.test;;
