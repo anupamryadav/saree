@@ -9,6 +9,7 @@
             <script type="text/javascript" src="node_modules/ng-grid/ng-grid-2.0.1.min.js"></script>
             <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/parse/1.6.7/parse.min.js"></script>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
             <style type="text/css">
     /*style.css*/
     .gridStyle {
@@ -25,7 +26,7 @@ var app = angular.module('myApp', ['ngGrid']);
 
 
 
-app.controller('MyCtrl', function($scope) {
+app.controller('MyCtrl', function($scope,$uibModal) {
 
 var url ="Womens_Ethnic_Wear";
   Parse.Cloud.run('hellofk', {
@@ -46,10 +47,25 @@ var url ="Womens_Ethnic_Wear";
         }
     });
     $scope.gridOptions = { data: 'myData' };
+
+     $uibModal.open({
+                templateUrl: 'checkout.html',
+                controller: 'CheckoutCtrl',
+                size: 'lg',
+                resolve: {
+                    totalAmount: $scope.getCartPrice,
+                    getImage: $scope.getImage
+                    
+                }
+            });
+        };
 });
             </script>
         </head>
         <body ng-controller="MyCtrl">
+             <a href="#" class="btn btn-info btn-Sm">
+          <span class="glyphicon glyphicon-filter"></span> Filter
+        </a>
             <div class="gridStyle" ng-grid="gridOptions">
             </div>
         </body>

@@ -1254,6 +1254,19 @@ $scope.addToCart = function (x) {
             });
         };
 
+          $scope.viewFilter = function () {
+
+           
+
+
+          $uibModal.open({
+                templateUrl: 'viewFilter.html',
+                controller: 'viewFilterCtrl',
+                size: 'lg'
+               
+            });
+        };
+
         $scope.getCartPrice = function () {
             var total = 0;
             $scope.cart.forEach(function (x) {
@@ -1902,3 +1915,10 @@ angular.module('ngCart.fulfilment', [])
 
 
 }]);
+
+mainApp.controller('viewFilterCtrl', function ($scope,$uibModal,$uibModalInstance) {
+
+$scope.cancel = function () {
+    $uibModalInstance.dismiss('cancel');
+  };
+	});

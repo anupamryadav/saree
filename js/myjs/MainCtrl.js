@@ -67,6 +67,19 @@ $scope.addToCart = function (x) {
             });
         };
 
+          $scope.viewFilter = function () {
+
+           
+
+
+          $uibModal.open({
+                templateUrl: 'viewFilter.html',
+                controller: 'viewFilterCtrl',
+                size: 'lg'
+               
+            });
+        };
+
         $scope.getCartPrice = function () {
             var total = 0;
             $scope.cart.forEach(function (x) {
