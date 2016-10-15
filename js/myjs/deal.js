@@ -1,5 +1,5 @@
 'use strict';
-mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams,toaster) {
+mainApp.controller('MainCtrldeal',['$scope','$http', '$routeParams','toaster', function($scope, $http, $routeParams,toaster) {
     $scope.loading = true;
     var paramValue = $routeParams.test;
     $scope.totalDisplayed = 6
@@ -61,7 +61,7 @@ mainApp.controller('MainCtrldeal', function($scope, $http, $routeParams,toaster)
         }
         return true;
     }
-}).run(['$rootScope', function($scope) {
+}]).run(['$rootScope', function($scope) {
     $scope.scenario = 'Sign up';
     $scope.currentUser = Parse.User.current();
     $scope.signUp = function(form) {

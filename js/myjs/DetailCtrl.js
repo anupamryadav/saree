@@ -1,5 +1,5 @@
 'use strict';
-mainApp.controller('DetailCtrl', function ($scope, totalAmount,getImage) {
+mainApp.controller('DetailCtrl', ['$scope', 'totalAmount','getImage', function ($scope, totalAmount,getImage) {
 		$scope.totalAmount = totalAmount;
 		$scope.getImage = getImage;
 
@@ -21,4 +21,4 @@ mainApp.controller('DetailCtrl', function ($scope, totalAmount,getImage) {
 			$scope.stripeError = null;
 			$scope.stripeToken = null;
 		};
-	});
+	}]);

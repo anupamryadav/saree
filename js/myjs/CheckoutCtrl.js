@@ -1,5 +1,5 @@
 'use strict';
-mainApp.controller('CheckoutCtrl', function ($scope, totalAmount,getImage,$uibModal,$uibModalInstance) {
+mainApp.controller('CheckoutCtrl',['$scope', 'totalAmount','getImage','$uibModal','$uibModalInstance',  function ($scope, totalAmount,getImage,$uibModal,$uibModalInstance) {
 		$scope.totalAmount = totalAmount;
 	
 
@@ -108,5 +108,5 @@ $scope.remove = function(item) {
 			$scope.stripeError = null;
 			$scope.stripeToken = null;
 		};
-	});
+	}]);
 

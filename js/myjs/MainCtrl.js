@@ -1,5 +1,5 @@
 'use strict';
-mainApp.controller('MainCtrl', function($scope, $http, $routeParams,$uibModal,toaster) {
+mainApp.controller('MainCtrl',['$scope', '$http', '$routeParams','$uibModal','toaster',function($scope, $http, $routeParams,$uibModal,toaster) {
     $scope.loading = true;
     var paramValue = $routeParams.test;;
     $scope.totalDisplayed = 6
@@ -183,7 +183,7 @@ $scope.addToCart = function (x) {
         }
         return true;
     }
-}).run(['$rootScope', function($scope) {
+}]).run(['$rootScope', function($scope) {
     $scope.scenario = 'Sign up';
     $scope.currentUser = Parse.User.current();
     $scope.signUp = function(form) {
