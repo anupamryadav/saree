@@ -1,5 +1,5 @@
 'use strict';
-mainApp.controller('MainCtrldeal',['$scope','$http', '$routeParams','toaster', function($scope, $http, $routeParams,toaster) {
+mainApp.controller('MainCtrldeal',['$scope','$http', '$routeParams','toaster','$uibModal', function($scope, $http, $routeParams,toaster,$uibModal) {
     $scope.loading = true;
     var paramValue = $routeParams.test;
     $scope.totalDisplayed = 6
@@ -39,7 +39,7 @@ mainApp.controller('MainCtrldeal',['$scope','$http', '$routeParams','toaster', f
             $scope.loading = false;
         }
     });
-    
+
           $scope.viewFilter = function () {
 
            
