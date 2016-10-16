@@ -39,6 +39,19 @@ mainApp.controller('MainCtrldeal',['$scope','$http', '$routeParams','toaster', f
             $scope.loading = false;
         }
     });
+    
+          $scope.viewFilter = function () {
+
+           
+
+
+          $uibModal.open({
+                templateUrl: 'viewFilter.html',
+                controller: 'viewFilterCtrl',
+                size: 'lg'
+               
+            });
+        };
     $scope.getCategories = function() {
         return ($scope.data || []).map(function(w) {
             return w.productBrand;
