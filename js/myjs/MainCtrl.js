@@ -6,6 +6,7 @@ mainApp.controller('MainCtrl', function($scope, $http, $routeParams,$uibModal,to
     $scope.filter = [];
     $scope.filter1 = [];
        $scope.filter2 = [];
+       $scope.ad= true;
 
     $scope.data = [];
     var urlval = "";
