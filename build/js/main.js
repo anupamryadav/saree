@@ -1210,7 +1210,7 @@ mainApp.controller('MainCtrlfkg', ['$scope', '$http', '$routeParams', function($
         methodname: url
     }, {
         success: function(result) {
-            console.log(result);
+           // console.log(result);
             setTimeout(function() {
                 if (result.data.productInfoList != null) {
                     for (var i = result.data.productInfoList.length - 1; i >= 0; i--) {
@@ -1218,9 +1218,11 @@ mainApp.controller('MainCtrlfkg', ['$scope', '$http', '$routeParams', function($
                     };
                 };
                 if ($scope.productBaseInfo != null) {
-                    for (var i = $scope.productBaseInfo.length - 1; i >= 0; i--) {
-                        $scope.data.push($scope.productBaseInfo[i]);
-                    };
+                  //  for (var i = $scope.productBaseInfo.length - 1; i >= 0; i--) {
+                    //    $scope.data.push($scope.productBaseInfo[i]);
+                    //};
+
+                    $scope.data = $scope.productBaseInfo;
                     $scope.$apply();
                     console.log($scope.data);
                     $scope.loading = false;
@@ -1297,6 +1299,7 @@ mainApp.controller('MainCtrl', function($scope, $http, $routeParams,$uibModal,to
     $scope.filter = [];
     $scope.filter1 = [];
        $scope.filter2 = [];
+       $scope.ad= true;
 
     $scope.data = [];
     var urlval = "";
