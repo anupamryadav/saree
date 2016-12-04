@@ -1,5 +1,5 @@
 'use strict';
-mainApp.controller('MainCtrlfkg', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+mainApp.controller('MainCtrlfkg', ['$scope', '$http','toaster', '$routeParams', function($scope, $http,toaster, $routeParams) {
     $scope.loading = true;
     var paramValue = $routeParams.test;
     $scope.totalDisplayed = 6
@@ -9,6 +9,14 @@ mainApp.controller('MainCtrlfkg', ['$scope', '$http', '$routeParams', function($
     $scope.productBaseInfo = [];
     $scope.filter = {};
     var url = paramValue;
+
+      toaster.pop({
+                type: 'info',        
+                body: 'Please Wait ...',
+                timeout: 9000
+
+            });
+
     Parse.Cloud.run('hellog', {
         methodname: url
     }, {
@@ -34,8 +42,15 @@ mainApp.controller('MainCtrlfkg', ['$scope', '$http', '$routeParams', function($
             $scope.loading = false;
         },
         error: function(error) {
-            console.log("Oops! Couldn't POST from Cloud Code successfully..  :" + error)
-            $scope.loading = false;
+            //console.log("Oops! Couldn't POST from Cloud Code successfully..  :" + error)
+           
+            toaster.pop({
+                type: 'error',        
+                body: 'Unable to connect service, Please Reload page!',
+                timeout: 4000
+
+            });
+             $scope.loading = false;
         }
     });
     $scope.getCategories = function() {
